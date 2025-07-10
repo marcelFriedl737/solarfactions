@@ -30,7 +30,6 @@ Solar Factions is a minimal text, dialog, and table-based sci-fi simulation feat
   - **Ships**: Mobile units with various purposes (cargo, mining, combat, exploration)
   - **Stations**: Fixed installations (trading posts, refineries, shipyards, habitats)
   - **Asteroids**: Minable resources with varying compositions
-  - **Planets**: Major population and production centers
   - **Jump Gates**: Enable fast travel between distant regions
 
 ### Regions and Territories

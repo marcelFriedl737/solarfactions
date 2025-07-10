@@ -1,0 +1,52 @@
+{
+  "templates": {
+    "basic_sector": {
+      "name": "Basic Sector",
+      "description": "A simple sector with basic entities",
+      "size": {"width": 1000, "height": 1000},
+      "entity_counts": {
+        "trading_stations": {"min": 2, "max": 5},
+        "industrial_stations": {"min": 1, "max": 3},
+        "freighter_ships": {"min": 5, "max": 15},
+        "fighter_ships": {"min": 3, "max": 8},
+        "metallic_asteroids": {"min": 20, "max": 40},
+        "ice_asteroids": {"min": 15, "max": 30}
+      },
+      "placement_rules": {
+        "stations": {
+          "min_distance_from_edge": 100,
+          "min_distance_between": 150
+        },
+        "asteroids": {
+          "cluster_probability": 0.6,
+          "cluster_size": {"min": 3, "max": 8},
+          "cluster_spread": 50
+        },
+        "ships": {
+          "spawn_near_stations": true,
+          "station_proximity": 100
+        }
+      }
+    },
+    "resource_rich": {
+      "name": "Resource Rich Sector",
+      "description": "A sector with abundant resources",
+      "size": {"width": 1200, "height": 1200},
+      "entity_counts": {
+        "trading_stations": {"min": 1, "max": 2},
+        "industrial_stations": {"min": 2, "max": 4},
+        "freighter_ships": {"min": 8, "max": 20},
+        "fighter_ships": {"min": 2, "max": 6},
+        "metallic_asteroids": {"min": 40, "max": 80},
+        "ice_asteroids": {"min": 30, "max": 60}
+      },
+      "placement_rules": {
+        "asteroids": {
+          "cluster_probability": 0.8,
+          "cluster_size": {"min": 5, "max": 12},
+          "cluster_spread": 75
+        }
+      }
+    }
+  }
+}

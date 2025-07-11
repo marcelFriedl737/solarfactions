@@ -1,0 +1,423 @@
+{
+  "metadata": {
+    "created_at": "2025-07-11T08:32:22.329992",
+    "entity_count": 21,
+    "filename": "workflow_test"
+  },
+  "entities": [
+    {
+      "id": "7def69cf-6214-4a60-a2f6-9c41e1fcd049",
+      "type": "star",
+      "position": [
+        455.23635988509443,
+        358.71866775226323
+      ],
+      "properties": {
+        "name": "Central Star",
+        "temperature": 5670,
+        "size": "medium",
+        "color": "yellow"
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:32:22.329859",
+      "updated_at": "2025-07-11T08:32:22.329860"
+    },
+    {
+      "id": "8b509bbe-3f43-4461-a3a3-ff438bc971bc",
+      "type": "planet",
+      "position": [
+        186.16018795075124,
+        640.7193267710168
+      ],
+      "properties": {
+        "name": "Unknown Planet",
+        "size": "medium",
+        "habitable": true,
+        "population": 0
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:32:22.329869",
+      "updated_at": "2025-07-11T08:32:22.329869"
+    },
+    {
+      "id": "9c0f1c7c-a212-4b60-b7a9-bec09ca2fcb8",
+      "type": "planet",
+      "position": [
+        130.5229328818579,
+        421.72122402035615
+      ],
+      "properties": {
+        "name": "Unknown Planet",
+        "size": "medium",
+        "habitable": true,
+        "population": 0
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:32:22.329875",
+      "updated_at": "2025-07-11T08:32:22.329875"
+    },
+    {
+      "id": "367371bb-c938-44b0-88a4-6acee12aa453",
+      "type": "planet",
+      "position": [
+        365.7581588077439,
+        611.2519713576212
+      ],
+      "properties": {
+        "name": "Unknown Planet",
+        "size": "medium",
+        "habitable": true,
+        "population": 0
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:32:22.329880",
+      "updated_at": "2025-07-11T08:32:22.329881"
+    },
+    {
+      "id": "271372f2-8274-4b3c-ab32-70b1f58f0c95",
+      "type": "asteroid",
+      "position": [
+        159.6623967219699,
+        269.7733256874204
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:32:22.329892",
+      "updated_at": "2025-07-11T08:32:22.329892"
+    },
+    {
+      "id": "1afa2e8f-6eb6-4405-a961-48e0d2bc229a",
+      "type": "asteroid",
+      "position": [
+        333.7963946289553,
+        196.1306820140889
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:32:22.329896",
+      "updated_at": "2025-07-11T08:32:22.329897"
+    },
+    {
+      "id": "0fd25c31-b5b1-436b-9335-e9f4a83536bc",
+      "type": "asteroid",
+      "position": [
+        1.6705535792228554,
+        349.0206347321747
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:32:22.329901",
+      "updated_at": "2025-07-11T08:32:22.329902"
+    },
+    {
+      "id": "bc98ba6a-bccb-4828-a6d4-4f80e7325aaf",
+      "type": "asteroid",
+      "position": [
+        87.61349975042287,
+        478.0795715903924
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:32:22.329906",
+      "updated_at": "2025-07-11T08:32:22.329906"
+    },
+    {
+      "id": "9176535d-4d16-4552-b792-c75efa9ef276",
+      "type": "asteroid",
+      "position": [
+        69.87696145918243,
+        252.36717898869063
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:32:22.329911",
+      "updated_at": "2025-07-11T08:32:22.329911"
+    },
+    {
+      "id": "e3bcab12-ea50-4cf2-b7b8-dcf0c754e03b",
+      "type": "asteroid",
+      "position": [
+        448.3217083069437,
+        724.3189218275991
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:32:22.329915",
+      "updated_at": "2025-07-11T08:32:22.329916"
+    },
+    {
+      "id": "2baa4ec3-9fe1-4b67-9741-3b6426ba9339",
+      "type": "asteroid",
+      "position": [
+        92.76456137849509,
+        113.74005154520086
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:32:22.329920",
+      "updated_at": "2025-07-11T08:32:22.329921"
+    },
+    {
+      "id": "2f215f23-f30c-460f-9c81-632446b41a96",
+      "type": "asteroid",
+      "position": [
+        790.0718443588016,
+        16.988779853591396
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:32:22.329925",
+      "updated_at": "2025-07-11T08:32:22.329925"
+    },
+    {
+      "id": "94ea0428-5380-46fc-80d0-aedb0692b694",
+      "type": "asteroid",
+      "position": [
+        911.1505480903207,
+        458.72646854474175
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel",
+          "platinum"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:32:22.329941",
+      "updated_at": "2025-07-11T08:32:22.329941"
+    },
+    {
+      "id": "450653da-583f-4f81-a1f0-b2c28634f8de",
+      "type": "asteroid",
+      "position": [
+        265.3217052615633,
+        670.2701153561076
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:32:22.329946",
+      "updated_at": "2025-07-11T08:32:22.329946"
+    },
+    {
+      "id": "2a7eaaf4-c19b-4957-b381-d872ec65f540",
+      "type": "asteroid",
+      "position": [
+        768.7947474799836,
+        274.76972652477167
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:32:22.329951",
+      "updated_at": "2025-07-11T08:32:22.329951"
+    },
+    {
+      "id": "5e7f7a38-7e9e-4bf7-96c2-550e81417009",
+      "type": "asteroid",
+      "position": [
+        801.496591292033,
+        165.48997653288913
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:32:22.329956",
+      "updated_at": "2025-07-11T08:32:22.329957"
+    },
+    {
+      "id": "6a2e17c3-53a5-45bc-a802-2e616ed7613b",
+      "type": "asteroid",
+      "position": [
+        608.9025261905533,
+        421.65996172913333
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:32:22.329961",
+      "updated_at": "2025-07-11T08:32:22.329961"
+    },
+    {
+      "id": "a57439fe-cdf8-48ca-9647-49f5156f55c1",
+      "type": "asteroid",
+      "position": [
+        809.3385246438048,
+        252.21052177279049
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:32:22.329965",
+      "updated_at": "2025-07-11T08:32:22.329966"
+    },
+    {
+      "id": "419f37ec-7776-400b-bf23-d5c2a36ea647",
+      "type": "asteroid",
+      "position": [
+        398.23815146789923,
+        615.4232719311391
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:32:22.329969",
+      "updated_at": "2025-07-11T08:32:22.329970"
+    },
+    {
+      "id": "2a476707-4240-4210-898c-b57a49f0cc04",
+      "type": "space_station",
+      "position": [
+        667.2431409482931,
+        206.5233176620658
+      ],
+      "properties": {
+        "name": "Station",
+        "size": "large",
+        "population": 100,
+        "services": [
+          "trading",
+          "repair"
+        ]
+      },
+      "components": {
+        "trading": {
+          "credits": 1000,
+          "buy_orders": [],
+          "sell_orders": []
+        },
+        "cargo": {
+          "capacity": 100,
+          "current_load": 0,
+          "items": []
+        }
+      },
+      "created_at": "2025-07-11T08:32:22.329976",
+      "updated_at": "2025-07-11T08:32:22.329978"
+    },
+    {
+      "id": "3bd65f66-1ad5-45d6-91a3-444718365e40",
+      "type": "space_station",
+      "position": [
+        551.7210502393125,
+        532.6415468106196
+      ],
+      "properties": {
+        "name": "Station",
+        "size": "large",
+        "population": 100,
+        "services": [
+          "trading",
+          "repair"
+        ]
+      },
+      "components": {
+        "trading": {
+          "credits": 1000,
+          "buy_orders": [],
+          "sell_orders": []
+        },
+        "cargo": {
+          "capacity": 100,
+          "current_load": 0,
+          "items": []
+        }
+      },
+      "created_at": "2025-07-11T08:32:22.329982",
+      "updated_at": "2025-07-11T08:32:22.329983"
+    }
+  ]
+}

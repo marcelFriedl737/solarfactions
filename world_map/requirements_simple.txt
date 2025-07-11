@@ -1,0 +1,18 @@
+# Minimal requirements for simplified Solar Factions system
+# Only the essential dependencies needed for core functionality
+
+# Core rendering and interaction
+pygame>=2.0.0
+
+# Testing (optional for development)
+pytest>=7.0.0
+
+# Note: We removed the following dependencies to reduce complexity:
+# - pydantic (complex validation)
+# - numpy (overkill for simple 2D coordinates)
+# - matplotlib (too heavy for simple visualization)
+# - pyyaml (JSON is sufficient)
+# - jsonschema (manual validation is simpler)
+
+# The entire system now runs with just pygame for rendering
+# Everything else uses Python standard library

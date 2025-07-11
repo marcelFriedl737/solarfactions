@@ -1,0 +1,23 @@
+{
+  "name": "Custom Test",
+  "description": "A test template",
+  "entities": [
+    {
+      "type": "star",
+      "count": 1,
+      "bounds": {
+        "x": [
+          400,
+          600
+        ],
+        "y": [
+          300,
+          500
+        ]
+      },
+      "properties": {
+        "name": "Custom Star"
+      }
+    }
+  ]
+}

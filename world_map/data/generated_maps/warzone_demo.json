@@ -1,0 +1,551 @@
+{
+  "metadata": {
+    "created_at": "2025-07-11T08:46:44.587860",
+    "entity_count": 16,
+    "filename": "warzone_demo"
+  },
+  "entities": [
+    {
+      "id": "f07ae6f1-748c-4c03-996e-c7174c02192f",
+      "type": "star",
+      "position": [
+        774.8202535878236,
+        646.6587308542444
+      ],
+      "properties": {
+        "name": "Contested Star",
+        "temperature": 5922,
+        "size": "medium",
+        "color": "yellow"
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:44.587531",
+      "updated_at": "2025-07-11T08:46:44.587538"
+    },
+    {
+      "id": "7ac520b2-4044-472e-b675-d24259b144d6",
+      "type": "planet",
+      "position": [
+        1073.7297585491676,
+        718.519777300019
+      ],
+      "properties": {
+        "name": "Unknown Planet",
+        "size": "medium",
+        "habitable": false,
+        "population": 0
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:44.587554",
+      "updated_at": "2025-07-11T08:46:44.587555"
+    },
+    {
+      "id": "2c4e8031-afb9-40f9-aed5-e5e50aa506a8",
+      "type": "planet",
+      "position": [
+        879.1455522475865,
+        857.8168624595045
+      ],
+      "properties": {
+        "name": "Unknown Planet",
+        "size": "medium",
+        "habitable": false,
+        "population": 0
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:44.587563",
+      "updated_at": "2025-07-11T08:46:44.587564"
+    },
+    {
+      "id": "b5ec3f81-eb68-4b2c-88cb-7470e862ae01",
+      "type": "fighter",
+      "position": [
+        1126.4458334315077,
+        986.4808985728122
+      ],
+      "properties": {
+        "name": "Fighter",
+        "size": "small",
+        "crew": 1
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "combat": {
+          "weapon_damage": 10,
+          "weapon_range": 50,
+          "weapon_cooldown": 1.0,
+          "last_fired": 0
+        }
+      },
+      "created_at": "2025-07-11T08:46:44.587578",
+      "updated_at": "2025-07-11T08:46:44.587582"
+    },
+    {
+      "id": "bda40e3f-c015-4440-8c25-946fc42c8546",
+      "type": "fighter",
+      "position": [
+        524.3835876553399,
+        1086.5845721268684
+      ],
+      "properties": {
+        "name": "Fighter",
+        "size": "small",
+        "crew": 1
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "combat": {
+          "weapon_damage": 10,
+          "weapon_range": 50,
+          "weapon_cooldown": 1.0,
+          "last_fired": 0
+        }
+      },
+      "created_at": "2025-07-11T08:46:44.587587",
+      "updated_at": "2025-07-11T08:46:44.587612"
+    },
+    {
+      "id": "1ae889c2-caf4-4846-948f-38457c0e6121",
+      "type": "fighter",
+      "position": [
+        249.39830310410403,
+        578.6036215407618
+      ],
+      "properties": {
+        "name": "Fighter",
+        "size": "small",
+        "crew": 1
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "combat": {
+          "weapon_damage": 10,
+          "weapon_range": 50,
+          "weapon_cooldown": 1.0,
+          "last_fired": 0
+        }
+      },
+      "created_at": "2025-07-11T08:46:44.587630",
+      "updated_at": "2025-07-11T08:46:44.587633"
+    },
+    {
+      "id": "8ddd55cd-cc4c-48d5-80c1-e1d6e87cee98",
+      "type": "fighter",
+      "position": [
+        707.676516137088,
+        363.12039160415014
+      ],
+      "properties": {
+        "name": "Fighter",
+        "size": "small",
+        "crew": 1
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "combat": {
+          "weapon_damage": 10,
+          "weapon_range": 50,
+          "weapon_cooldown": 1.0,
+          "last_fired": 0
+        }
+      },
+      "created_at": "2025-07-11T08:46:44.587679",
+      "updated_at": "2025-07-11T08:46:44.587687"
+    },
+    {
+      "id": "d48cfbc8-b59f-4249-ae44-45e7143295be",
+      "type": "fighter",
+      "position": [
+        264.56620579316007,
+        285.0638518520932
+      ],
+      "properties": {
+        "name": "Fighter",
+        "size": "small",
+        "crew": 1
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "combat": {
+          "weapon_damage": 10,
+          "weapon_range": 50,
+          "weapon_cooldown": 1.0,
+          "last_fired": 0
+        }
+      },
+      "created_at": "2025-07-11T08:46:44.587699",
+      "updated_at": "2025-07-11T08:46:44.587702"
+    },
+    {
+      "id": "c9c6668c-92ee-4325-a407-c029e6d6857a",
+      "type": "fighter",
+      "position": [
+        607.6010986735128,
+        620.9232614683866
+      ],
+      "properties": {
+        "name": "Fighter",
+        "size": "small",
+        "crew": 1
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "combat": {
+          "weapon_damage": 10,
+          "weapon_range": 50,
+          "weapon_cooldown": 1.0,
+          "last_fired": 0
+        }
+      },
+      "created_at": "2025-07-11T08:46:44.587707",
+      "updated_at": "2025-07-11T08:46:44.587709"
+    },
+    {
+      "id": "62060ec7-50cf-4878-bb6e-69a932430ed5",
+      "type": "fighter",
+      "position": [
+        1121.2736792915803,
+        810.6775559858222
+      ],
+      "properties": {
+        "name": "Fighter",
+        "size": "small",
+        "crew": 1
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "combat": {
+          "weapon_damage": 10,
+          "weapon_range": 50,
+          "weapon_cooldown": 1.0,
+          "last_fired": 0
+        }
+      },
+      "created_at": "2025-07-11T08:46:44.587714",
+      "updated_at": "2025-07-11T08:46:44.587716"
+    },
+    {
+      "id": "e8caa4a7-e3aa-4a98-887e-7befafc25a08",
+      "type": "fighter",
+      "position": [
+        1316.4298031687847,
+        679.8156078980699
+      ],
+      "properties": {
+        "name": "Fighter",
+        "size": "small",
+        "crew": 1
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "combat": {
+          "weapon_damage": 10,
+          "weapon_range": 50,
+          "weapon_cooldown": 1.0,
+          "last_fired": 0
+        }
+      },
+      "created_at": "2025-07-11T08:46:44.587720",
+      "updated_at": "2025-07-11T08:46:44.587723"
+    },
+    {
+      "id": "24427304-6822-458a-841a-466918ac51c3",
+      "type": "fighter",
+      "position": [
+        1007.8332973846732,
+        1058.598855717346
+      ],
+      "properties": {
+        "name": "Fighter",
+        "size": "small",
+        "crew": 1
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "combat": {
+          "weapon_damage": 10,
+          "weapon_range": 50,
+          "weapon_cooldown": 1.0,
+          "last_fired": 0
+        }
+      },
+      "created_at": "2025-07-11T08:46:44.587727",
+      "updated_at": "2025-07-11T08:46:44.587729"
+    },
+    {
+      "id": "7f323370-bebb-4478-ae9b-d995bfa171a0",
+      "type": "fighter",
+      "position": [
+        1156.9372753928396,
+        174.05007311705702
+      ],
+      "properties": {
+        "name": "Fighter",
+        "size": "small",
+        "crew": 1
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "combat": {
+          "weapon_damage": 10,
+          "weapon_range": 50,
+          "weapon_cooldown": 1.0,
+          "last_fired": 0
+        }
+      },
+      "created_at": "2025-07-11T08:46:44.587734",
+      "updated_at": "2025-07-11T08:46:44.587736"
+    },
+    {
+      "id": "8f317e1b-0294-42ce-8b09-3812c8ea6e60",
+      "type": "cargo_ship",
+      "position": [
+        786.464429177357,
+        490.3494705674243
+      ],
+      "properties": {
+        "name": "Cargo Ship",
+        "size": "medium",
+        "crew": 5
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "cargo": {
+          "capacity": 100,
+          "current_load": 0,
+          "items": []
+        }
+      },
+      "created_at": "2025-07-11T08:46:44.587750",
+      "updated_at": "2025-07-11T08:46:44.587752"
+    },
+    {
+      "id": "d0bb45cf-1536-4af7-bd0d-fea7e40c6824",
+      "type": "cargo_ship",
+      "position": [
+        1284.560045287794,
+        779.7818023612866
+      ],
+      "properties": {
+        "name": "Cargo Ship",
+        "size": "medium",
+        "crew": 5
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "cargo": {
+          "capacity": 100,
+          "current_load": 0,
+          "items": []
+        }
+      },
+      "created_at": "2025-07-11T08:46:44.587756",
+      "updated_at": "2025-07-11T08:46:44.587758"
+    },
+    {
+      "id": "cdd5cd17-1fba-443d-87d1-75257ac17729",
+      "type": "cargo_ship",
+      "position": [
+        911.310181391502,
+        897.1066142228982
+      ],
+      "properties": {
+        "name": "Cargo Ship",
+        "size": "medium",
+        "crew": 5
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "cargo": {
+          "capacity": 100,
+          "current_load": 0,
+          "items": []
+        }
+      },
+      "created_at": "2025-07-11T08:46:44.587763",
+      "updated_at": "2025-07-11T08:46:44.587765"
+    }
+  ]
+}

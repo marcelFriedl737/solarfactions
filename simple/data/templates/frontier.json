@@ -1,0 +1,93 @@
+{
+  "name": "Frontier System",
+  "description": "A frontier system with mining operations and trade routes",
+  "entities": [
+    {
+      "type": "star",
+      "count": 1,
+      "bounds": {
+        "x": [500, 500],
+        "y": [400, 400]
+      },
+      "properties": {
+        "temperature": [4500, 5500],
+        "luminosity": [0.6, 1.0]
+      }
+    },
+    {
+      "type": "planet",
+      "count": [2, 4],
+      "bounds": {
+        "x": [200, 800],
+        "y": [200, 600]
+      },
+      "properties": {
+        "habitable": [false, false, true],
+        "size": ["small", "medium"],
+        "resources": ["minerals", "gas", "water"]
+      }
+    },
+    {
+      "type": "asteroid",
+      "count": [15, 25],
+      "bounds": {
+        "x": [100, 900],
+        "y": [100, 700]
+      },
+      "properties": {
+        "size": ["small", "medium", "large"],
+        "composition": ["metallic", "rocky", "ice"],
+        "richness": ["poor", "moderate", "rich"]
+      }
+    },
+    {
+      "type": "space_station",
+      "count": [2, 4],
+      "bounds": {
+        "x": [300, 700],
+        "y": [250, 550]
+      },
+      "properties": {
+        "station_type": ["mining", "trading", "refinery"],
+        "capacity": [200, 800]
+      }
+    },
+    {
+      "type": "cargo_ship",
+      "count": [5, 12],
+      "bounds": {
+        "x": [200, 800],
+        "y": [200, 600]
+      },
+      "properties": {
+        "cargo_capacity": [100, 300],
+        "mission": ["trade", "supply", "transport"]
+      }
+    },
+    {
+      "type": "mining_ship",
+      "count": [6, 12],
+      "bounds": {
+        "x": [150, 850],
+        "y": [150, 650]
+      },
+      "properties": {
+        "mining_efficiency": [0.6, 1.2],
+        "cargo_capacity": [50, 150],
+        "specialization": ["metal", "ice", "gas"]
+      }
+    },
+    {
+      "type": "fighter",
+      "count": [3, 8],
+      "bounds": {
+        "x": [250, 750],
+        "y": [250, 550]
+      },
+      "properties": {
+        "role": ["patrol", "escort", "security"],
+        "pilot_skill": ["veteran", "ace"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "metadata": {
+    "created_at": "2025-07-11T09:09:29.693450",
+    "entity_count": 3,
+    "filename": "test_save"
+  },
+  "entities": [
+    {
+      "id": "0df46b43-5d3b-481f-a8d0-a596c1f761e3",
+      "type": "star",
+      "position": [
+        500,
+        400
+      ],
+      "properties": {
+        "name": "Test Star",
+        "temperature": 5778,
+        "size": "medium",
+        "color": "yellow"
+      },
+      "components": {},
+      "created_at": "2025-07-11T09:09:29.692880",
+      "updated_at": "2025-07-11T09:09:29.692880"
+    },
+    {
+      "id": "79519e8b-3a43-4c66-852c-e03ade789a45",
+      "type": "planet",
+      "position": [
+        300,
+        400
+      ],
+      "properties": {
+        "name": "Test Planet",
+        "size": "medium",
+        "habitable": false,
+        "population": 0
+      },
+      "components": {},
+      "created_at": "2025-07-11T09:09:29.692886",
+      "updated_at": "2025-07-11T09:09:29.692887"
+    },
+    {
+      "id": "f8cd4ef4-5b1d-4b06-92ff-08fcdef8990e",
+      "type": "cargo_ship",
+      "position": [
+        100,
+        200
+      ],
+      "properties": {
+        "name": "Test Ship",
+        "size": "medium",
+        "crew": 5
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "cargo": {
+          "capacity": 100,
+          "current_load": 0,
+          "items": []
+        }
+      },
+      "created_at": "2025-07-11T09:09:29.692892",
+      "updated_at": "2025-07-11T09:09:29.692894"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-# simple_main.py - Simplified Solar Factions Entry Point
+# main.py - Simplified Solar Factions Entry Point
 """
 Simplified entry point for Solar Factions that demonstrates the reduced complexity approach.
 Shows how easy it is to generate, save, and work with maps using the simplified system.
@@ -9,13 +9,10 @@ import argparse
 import os
 from typing import List
 
-# Add current directory to path for imports
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-
-from entities.simple import Entity
+from entities.entity import Entity
 from data_manager import DataManager
-from simple_generator import SimpleMapGenerator
-from simple_renderer import SimpleRenderer  # Use simplified renderer
+from generator import SimpleMapGenerator
+from renderer import SimpleRenderer
 
 
 def main():
@@ -25,12 +22,12 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  python simple_main.py                          # Generate and show basic map
-  python simple_main.py --template frontier     # Use frontier template
-  python simple_main.py --save my_map          # Save generated map
-  python simple_main.py --load my_map          # Load and display saved map
-  python simple_main.py --list                 # List available maps
-  python simple_main.py --seed 42 --save test  # Reproducible generation
+  python main.py                          # Generate and show basic map
+  python main.py --template frontier     # Use frontier template
+  python main.py --save my_map          # Save generated map
+  python main.py --load my_map          # Load and display saved map
+  python main.py --list                 # List available maps
+  python main.py --seed 42 --save test  # Reproducible generation
         """
     )
     
@@ -203,7 +200,7 @@ def run_system_tests():
     
     try:
         # Import and run tests
-        from test_simplified_system import run_all_tests
+        from tests.test_system import run_all_tests
         success = run_all_tests()
         
         if success:

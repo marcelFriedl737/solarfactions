@@ -1,0 +1,766 @@
+{
+  "metadata": {
+    "created_at": "2025-07-11T08:46:34.657859",
+    "entity_count": 32,
+    "filename": "frontier_demo"
+  },
+  "entities": [
+    {
+      "id": "4150c7ee-f7e9-4b9c-9771-d1b54cf208c9",
+      "type": "star",
+      "position": [
+        555.2363598850944,
+        458.71866775226323
+      ],
+      "properties": {
+        "name": "Frontier Star",
+        "temperature": 4416,
+        "size": "medium",
+        "color": "yellow"
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:34.657537",
+      "updated_at": "2025-07-11T08:46:34.657548"
+    },
+    {
+      "id": "3dd1d6b5-84b3-4827-b2b7-91bd3643b402",
+      "type": "asteroid",
+      "position": [
+        129.24028192612687,
+        901.1988779516946
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "platinum"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:34.657579",
+      "updated_at": "2025-07-11T08:46:34.657580"
+    },
+    {
+      "id": "7a4bf8c0-f6ce-449c-8073-3b1b9f9f62b1",
+      "type": "asteroid",
+      "position": [
+        45.78439932278688,
+        536.2020400339269
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel",
+          "platinum"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:34.657588",
+      "updated_at": "2025-07-11T08:46:34.657589"
+    },
+    {
+      "id": "e6cb07d6-c37c-4101-802a-c843566caa35",
+      "type": "asteroid",
+      "position": [
+        398.6372382116158,
+        852.0866189293687
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel",
+          "platinum"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:34.657595",
+      "updated_at": "2025-07-11T08:46:34.657595"
+    },
+    {
+      "id": "dfaad43d-d605-450b-a836-6595e627b271",
+      "type": "asteroid",
+      "position": [
+        191.5948760663639,
+        337.2166571092755
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel",
+          "platinum"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:34.657600",
+      "updated_at": "2025-07-11T08:46:34.657600"
+    },
+    {
+      "id": "3845aee3-d2b9-4dfa-8b09-8c2d0cb1d71a",
+      "type": "asteroid",
+      "position": [
+        400.5556735547463,
+        245.16335251761112
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel",
+          "platinum"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:34.657605",
+      "updated_at": "2025-07-11T08:46:34.657605"
+    },
+    {
+      "id": "35f3d5dc-7020-44df-b21c-34c004d9bb70",
+      "type": "asteroid",
+      "position": [
+        2.0046642950674265,
+        436.2757934152184
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel",
+          "platinum",
+          "uranium"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:34.657613",
+      "updated_at": "2025-07-11T08:46:34.657614"
+    },
+    {
+      "id": "d2bab05f-7f57-4853-9e8f-5b7b9ba2cf4b",
+      "type": "asteroid",
+      "position": [
+        105.13619970050745,
+        597.5994644879905
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel",
+          "platinum"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:34.657618",
+      "updated_at": "2025-07-11T08:46:34.657619"
+    },
+    {
+      "id": "2ca03948-3fe8-434c-a6e8-120b68fbd2b6",
+      "type": "asteroid",
+      "position": [
+        83.85235375101891,
+        315.4589737358633
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel",
+          "platinum"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:34.657623",
+      "updated_at": "2025-07-11T08:46:34.657623"
+    },
+    {
+      "id": "53719f89-3662-4247-91f3-5d2a6b4570ae",
+      "type": "asteroid",
+      "position": [
+        537.9860499683325,
+        905.3986522844989
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel",
+          "platinum"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:34.657627",
+      "updated_at": "2025-07-11T08:46:34.657628"
+    },
+    {
+      "id": "b6b033c6-af99-4d9d-be35-a149a9455d8c",
+      "type": "asteroid",
+      "position": [
+        111.31747365419412,
+        142.17506443150108
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel",
+          "platinum"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:34.657632",
+      "updated_at": "2025-07-11T08:46:34.657632"
+    },
+    {
+      "id": "5f1d01ee-b177-4aaa-b0db-8fdea23c76bb",
+      "type": "asteroid",
+      "position": [
+        948.086213230562,
+        21.235974816989245
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel",
+          "platinum"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:34.657637",
+      "updated_at": "2025-07-11T08:46:34.657637"
+    },
+    {
+      "id": "cdcb2392-8aaa-4704-ba9b-7864f4a2b134",
+      "type": "asteroid",
+      "position": [
+        1093.380657708385,
+        573.4080856809271
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel",
+          "platinum"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:34.657642",
+      "updated_at": "2025-07-11T08:46:34.657642"
+    },
+    {
+      "id": "c93c5780-1d42-4333-9c8f-3eac990dedfb",
+      "type": "asteroid",
+      "position": [
+        318.38604631387597,
+        837.8376441951344
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "platinum"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:34.657648",
+      "updated_at": "2025-07-11T08:46:34.657648"
+    },
+    {
+      "id": "2c262727-35a4-4c5d-a24c-988a3e1aac54",
+      "type": "asteroid",
+      "position": [
+        922.5536969759803,
+        343.4621581559646
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel",
+          "platinum"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:34.657653",
+      "updated_at": "2025-07-11T08:46:34.657653"
+    },
+    {
+      "id": "2425c48e-ac4d-40dd-8432-7961dfb76b7f",
+      "type": "asteroid",
+      "position": [
+        961.7959095504395,
+        206.86247066611142
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel",
+          "platinum"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:34.657657",
+      "updated_at": "2025-07-11T08:46:34.657658"
+    },
+    {
+      "id": "30558d6e-0780-4235-84e8-75d6f2582e89",
+      "type": "asteroid",
+      "position": [
+        730.683031428664,
+        527.0749521614166
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "nickel",
+          "platinum"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:34.657663",
+      "updated_at": "2025-07-11T08:46:34.657663"
+    },
+    {
+      "id": "da58da4a-8e2e-479c-8d12-76ff58745bdf",
+      "type": "asteroid",
+      "position": [
+        971.2062295725658,
+        315.2631522159881
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel",
+          "platinum",
+          "gold"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:34.657669",
+      "updated_at": "2025-07-11T08:46:34.657669"
+    },
+    {
+      "id": "ced00be0-be35-42d7-8729-a75645960656",
+      "type": "asteroid",
+      "position": [
+        477.88578176147905,
+        769.2790899139238
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel",
+          "platinum"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:34.657674",
+      "updated_at": "2025-07-11T08:46:34.657674"
+    },
+    {
+      "id": "9e8e7adb-cf1a-47f0-8d83-24efd9528174",
+      "type": "asteroid",
+      "position": [
+        615.3025606368781,
+        684.837218661006
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "nickel",
+          "platinum"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:34.657679",
+      "updated_at": "2025-07-11T08:46:34.657679"
+    },
+    {
+      "id": "be8d600c-222b-4a9b-aef0-6ee095344a9a",
+      "type": "asteroid",
+      "position": [
+        766.0239171665985,
+        666.6576310731809
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel",
+          "platinum",
+          "uranium"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:34.657684",
+      "updated_at": "2025-07-11T08:46:34.657685"
+    },
+    {
+      "id": "95eab85f-91a0-459f-958d-ca69a39f53f6",
+      "type": "asteroid",
+      "position": [
+        1068.1182846442828,
+        486.136470143564
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "platinum"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:34.657689",
+      "updated_at": "2025-07-11T08:46:34.657690"
+    },
+    {
+      "id": "92f38fc4-dea2-4431-b3e1-d6a87de05e33",
+      "type": "asteroid",
+      "position": [
+        802.1642662837766,
+        374.5216318224833
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel",
+          "platinum",
+          "uranium"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:34.657695",
+      "updated_at": "2025-07-11T08:46:34.657695"
+    },
+    {
+      "id": "3e88d8bc-a111-4e5b-8784-d5a8efc8d7d2",
+      "type": "asteroid",
+      "position": [
+        38.20956808932223,
+        754.1731718588721
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel",
+          "platinum"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:34.657700",
+      "updated_at": "2025-07-11T08:46:34.657700"
+    },
+    {
+      "id": "d0fe85ab-d498-4499-8082-385e2d048b50",
+      "type": "asteroid",
+      "position": [
+        217.75789909804905,
+        820.190184433831
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "nickel",
+          "platinum"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:34.657705",
+      "updated_at": "2025-07-11T08:46:34.657705"
+    },
+    {
+      "id": "f526d61f-0b59-470e-9847-9a5a9372bad1",
+      "type": "asteroid",
+      "position": [
+        1096.3750942370755,
+        658.0741574010793
+      ],
+      "properties": {
+        "name": "Asteroid",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel",
+          "platinum"
+        ]
+      },
+      "components": {},
+      "created_at": "2025-07-11T08:46:34.657709",
+      "updated_at": "2025-07-11T08:46:34.657710"
+    },
+    {
+      "id": "7bb891a7-c42b-4441-a6c2-9857f75afd45",
+      "type": "mining_ship",
+      "position": [
+        477.45881880435337,
+        537.2663241279478
+      ],
+      "properties": {
+        "name": "Mining Ship",
+        "size": "medium",
+        "crew": 3
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "cargo": {
+          "capacity": 100,
+          "current_load": 0,
+          "items": []
+        },
+        "mining": {
+          "mining_rate": 5.0,
+          "mining_range": 20.0,
+          "target_asteroid": null
+        }
+      },
+      "created_at": "2025-07-11T08:46:34.657720",
+      "updated_at": "2025-07-11T08:46:34.657725"
+    },
+    {
+      "id": "6e580eb0-15d6-40ef-9a52-12ea6d3d32c2",
+      "type": "mining_ship",
+      "position": [
+        735.0931257322972,
+        123.3094989380131
+      ],
+      "properties": {
+        "name": "Mining Ship",
+        "size": "medium",
+        "crew": 3
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "cargo": {
+          "capacity": 100,
+          "current_load": 0,
+          "items": []
+        },
+        "mining": {
+          "mining_rate": 5.0,
+          "mining_range": 20.0,
+          "target_asteroid": null
+        }
+      },
+      "created_at": "2025-07-11T08:46:34.657730",
+      "updated_at": "2025-07-11T08:46:34.657732"
+    },
+    {
+      "id": "eaf564a2-c312-43a7-a2f6-7a93f6042ebc",
+      "type": "mining_ship",
+      "position": [
+        422.45796369418514,
+        864.612874224846
+      ],
+      "properties": {
+        "name": "Mining Ship",
+        "size": "medium",
+        "crew": 3
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "cargo": {
+          "capacity": 100,
+          "current_load": 0,
+          "items": []
+        },
+        "mining": {
+          "mining_rate": 5.0,
+          "mining_range": 20.0,
+          "target_asteroid": null
+        }
+      },
+      "created_at": "2025-07-11T08:46:34.657737",
+      "updated_at": "2025-07-11T08:46:34.657739"
+    },
+    {
+      "id": "9d590a9d-fc52-4d5c-a5ff-a35a613f3e1f",
+      "type": "mining_ship",
+      "position": [
+        133.03115629266895,
+        549.2705722739133
+      ],
+      "properties": {
+        "name": "Mining Ship",
+        "size": "medium",
+        "crew": 3
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "cargo": {
+          "capacity": 100,
+          "current_load": 0,
+          "items": []
+        },
+        "mining": {
+          "mining_rate": 5.0,
+          "mining_range": 20.0,
+          "target_asteroid": null
+        }
+      },
+      "created_at": "2025-07-11T08:46:34.657743",
+      "updated_at": "2025-07-11T08:46:34.657746"
+    },
+    {
+      "id": "5bf27e6b-03a6-4c76-9b0d-df2a2e06d553",
+      "type": "mining_ship",
+      "position": [
+        514.0715848532842,
+        119.03380536513284
+      ],
+      "properties": {
+        "name": "Mining Ship",
+        "size": "medium",
+        "crew": 3
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "cargo": {
+          "capacity": 100,
+          "current_load": 0,
+          "items": []
+        },
+        "mining": {
+          "mining_rate": 5.0,
+          "mining_range": 20.0,
+          "target_asteroid": null
+        }
+      },
+      "created_at": "2025-07-11T08:46:34.657750",
+      "updated_at": "2025-07-11T08:46:34.657752"
+    },
+    {
+      "id": "ea671472-f40a-4fd4-bc9f-95cb3350b5a7",
+      "type": "space_station",
+      "position": [
+        681.6503538326297,
+        365.54343665802514
+      ],
+      "properties": {
+        "name": "Station",
+        "size": "large",
+        "population": 100,
+        "services": [
+          "trading",
+          "repair",
+          "refuel"
+        ]
+      },
+      "components": {
+        "trading": {
+          "credits": 1000,
+          "buy_orders": [],
+          "sell_orders": []
+        },
+        "cargo": {
+          "capacity": 100,
+          "current_load": 0,
+          "items": []
+        }
+      },
+      "created_at": "2025-07-11T08:46:34.657759",
+      "updated_at": "2025-07-11T08:46:34.657761"
+    }
+  ]
+}

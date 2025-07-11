@@ -1,0 +1,893 @@
+{
+  "metadata": {
+    "created_at": "2025-07-11T09:09:37.813815",
+    "entity_count": 32,
+    "filename": "visual_demo"
+  },
+  "entities": [
+    {
+      "id": "8dedb068-1c2c-4343-bf41-4ba5785d297d",
+      "type": "star",
+      "position": [
+        528.134688495703,
+        358.00656147037
+      ],
+      "properties": {
+        "name": "Entity",
+        "temperature": 5872.492496429288,
+        "size": "medium",
+        "color": "yellow",
+        "luminosity": 1.029502083461587
+      },
+      "components": {},
+      "created_at": "2025-07-11T09:09:37.813419",
+      "updated_at": "2025-07-11T09:09:37.813424"
+    },
+    {
+      "id": "0364b82a-94be-44e0-8f01-04a2365afeda",
+      "type": "planet",
+      "position": [
+        490.0311326924166,
+        551.2777441700215
+      ],
+      "properties": {
+        "name": "Entity 1",
+        "size": "small",
+        "habitable": 0.6019470477066676,
+        "population": 0,
+        "atmosphere": "thick"
+      },
+      "components": {},
+      "created_at": "2025-07-11T09:09:37.813466",
+      "updated_at": "2025-07-11T09:09:37.813467"
+    },
+    {
+      "id": "b551e8d1-4f85-4bfc-b1fb-9aea5dcef6c3",
+      "type": "planet",
+      "position": [
+        588.4376897727742,
+        457.48427747043775
+      ],
+      "properties": {
+        "name": "Entity 2",
+        "size": "medium",
+        "habitable": 0.5976750621582382,
+        "population": 0,
+        "atmosphere": "none"
+      },
+      "components": {},
+      "created_at": "2025-07-11T09:09:37.813479",
+      "updated_at": "2025-07-11T09:09:37.813479"
+    },
+    {
+      "id": "e1cdb00c-1a6e-40f9-aea3-08be3d406ac7",
+      "type": "planet",
+      "position": [
+        585.5485506883552,
+        527.6921841425096
+      ],
+      "properties": {
+        "name": "Entity 3",
+        "size": "large",
+        "habitable": 0.03846760690083617,
+        "population": 0,
+        "atmosphere": "thick"
+      },
+      "components": {},
+      "created_at": "2025-07-11T09:09:37.813488",
+      "updated_at": "2025-07-11T09:09:37.813489"
+    },
+    {
+      "id": "d1c45fda-fe8f-4673-94ed-61b1afd80df5",
+      "type": "planet",
+      "position": [
+        587.3275890695002,
+        535.0268518567174
+      ],
+      "properties": {
+        "name": "Entity 4",
+        "size": "large",
+        "habitable": 0.7915886626668049,
+        "population": 0,
+        "atmosphere": "thin"
+      },
+      "components": {},
+      "created_at": "2025-07-11T09:09:37.813497",
+      "updated_at": "2025-07-11T09:09:37.813497"
+    },
+    {
+      "id": "461f423b-2348-4c0b-b5cc-6ccb65ed4e39",
+      "type": "planet",
+      "position": [
+        289.4956064131131,
+        589.8852752773132
+      ],
+      "properties": {
+        "name": "Entity 5",
+        "size": "small",
+        "habitable": 0.8350839543239207,
+        "population": 0,
+        "atmosphere": "thick"
+      },
+      "components": {},
+      "created_at": "2025-07-11T09:09:37.813504",
+      "updated_at": "2025-07-11T09:09:37.813505"
+    },
+    {
+      "id": "bc695cb1-1e74-468e-a45f-406dc387f5ae",
+      "type": "planet",
+      "position": [
+        231.88733325348235,
+        511.76536456854643
+      ],
+      "properties": {
+        "name": "Entity 6",
+        "size": "large",
+        "habitable": 0.11644570586324587,
+        "population": 0,
+        "atmosphere": "thin"
+      },
+      "components": {},
+      "created_at": "2025-07-11T09:09:37.813512",
+      "updated_at": "2025-07-11T09:09:37.813512"
+    },
+    {
+      "id": "9f5a8ac0-3199-40ca-a642-eb6f27cb4f3b",
+      "type": "asteroid",
+      "position": [
+        203.76478827686225,
+        492.10361316648823
+      ],
+      "properties": {
+        "name": "Entity 1",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel"
+        ],
+        "composition": "rocky"
+      },
+      "components": {},
+      "created_at": "2025-07-11T09:09:37.813530",
+      "updated_at": "2025-07-11T09:09:37.813530"
+    },
+    {
+      "id": "1e5351f3-ae94-49cb-8c61-c99c3ca8595c",
+      "type": "asteroid",
+      "position": [
+        471.9604135435074,
+        549.2894473153417
+      ],
+      "properties": {
+        "name": "Entity 2",
+        "size": "medium",
+        "resources": [
+          "iron",
+          "nickel"
+        ],
+        "composition": "ice"
+      },
+      "components": {},
+      "created_at": "2025-07-11T09:09:37.813537",
+      "updated_at": "2025-07-11T09:09:37.813538"
+    },
+    {
+      "id": "fa260e46-efdd-4230-b542-417e1fe0f819",
+      "type": "asteroid",
+      "position": [
+        294.35379499273733,
+        166.82990069307888
+      ],
+      "properties": {
+        "name": "Entity 3",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel"
+        ],
+        "composition": "metallic"
+      },
+      "components": {},
+      "created_at": "2025-07-11T09:09:37.813544",
+      "updated_at": "2025-07-11T09:09:37.813544"
+    },
+    {
+      "id": "8f5e0bc6-42be-4982-8abb-f0dce4f22caf",
+      "type": "asteroid",
+      "position": [
+        774.1386690983447,
+        238.65412803295345
+      ],
+      "properties": {
+        "name": "Entity 4",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel"
+        ],
+        "composition": "ice"
+      },
+      "components": {},
+      "created_at": "2025-07-11T09:09:37.813550",
+      "updated_at": "2025-07-11T09:09:37.813551"
+    },
+    {
+      "id": "1b34b6c9-a811-4d68-bf89-4895f2111c78",
+      "type": "asteroid",
+      "position": [
+        736.1156934180719,
+        264.45019923197106
+      ],
+      "properties": {
+        "name": "Entity 5",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel"
+        ],
+        "composition": "metallic"
+      },
+      "components": {},
+      "created_at": "2025-07-11T09:09:37.813557",
+      "updated_at": "2025-07-11T09:09:37.813557"
+    },
+    {
+      "id": "01b08bea-ad74-46c3-9ba2-25961d8b0ae2",
+      "type": "asteroid",
+      "position": [
+        501.20321128695304,
+        125.36056747252171
+      ],
+      "properties": {
+        "name": "Entity 6",
+        "size": "medium",
+        "resources": [
+          "iron",
+          "nickel"
+        ],
+        "composition": "ice"
+      },
+      "components": {},
+      "created_at": "2025-07-11T09:09:37.813563",
+      "updated_at": "2025-07-11T09:09:37.813564"
+    },
+    {
+      "id": "429127cf-5099-4d53-ac3f-1e607890e8c5",
+      "type": "asteroid",
+      "position": [
+        718.4529135484347,
+        372.17235780987437
+      ],
+      "properties": {
+        "name": "Entity 7",
+        "size": "medium",
+        "resources": [
+          "iron",
+          "nickel"
+        ],
+        "composition": "metallic"
+      },
+      "components": {},
+      "created_at": "2025-07-11T09:09:37.813570",
+      "updated_at": "2025-07-11T09:09:37.813570"
+    },
+    {
+      "id": "4994bcfc-a1a0-4fbe-b6d5-e44fc67232cb",
+      "type": "asteroid",
+      "position": [
+        187.2514392517039,
+        648.1881377645946
+      ],
+      "properties": {
+        "name": "Entity 8",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel"
+        ],
+        "composition": "ice"
+      },
+      "components": {},
+      "created_at": "2025-07-11T09:09:37.813576",
+      "updated_at": "2025-07-11T09:09:37.813577"
+    },
+    {
+      "id": "8a6ebd23-dee6-42b4-a226-c2a464df367b",
+      "type": "asteroid",
+      "position": [
+        542.6131951404861,
+        202.9594058223338
+      ],
+      "properties": {
+        "name": "Entity 9",
+        "size": "medium",
+        "resources": [
+          "iron",
+          "nickel"
+        ],
+        "composition": "rocky"
+      },
+      "components": {},
+      "created_at": "2025-07-11T09:09:37.813583",
+      "updated_at": "2025-07-11T09:09:37.813583"
+    },
+    {
+      "id": "fd4c13e7-4b8a-4174-9394-a53ad15d7413",
+      "type": "asteroid",
+      "position": [
+        282.1593767528345,
+        577.3653673854914
+      ],
+      "properties": {
+        "name": "Entity 10",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel"
+        ],
+        "composition": "metallic"
+      },
+      "components": {},
+      "created_at": "2025-07-11T09:09:37.813589",
+      "updated_at": "2025-07-11T09:09:37.813590"
+    },
+    {
+      "id": "4c368026-bab8-4bc5-9fae-2deeeeb0de15",
+      "type": "asteroid",
+      "position": [
+        266.07344756338324,
+        410.7888175253097
+      ],
+      "properties": {
+        "name": "Entity 11",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel"
+        ],
+        "composition": "ice"
+      },
+      "components": {},
+      "created_at": "2025-07-11T09:09:37.813596",
+      "updated_at": "2025-07-11T09:09:37.813596"
+    },
+    {
+      "id": "bd3c7e23-a1cf-4343-89b7-8f5d68dd4e22",
+      "type": "asteroid",
+      "position": [
+        325.43778507449935,
+        247.47299463703223
+      ],
+      "properties": {
+        "name": "Entity 12",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel"
+        ],
+        "composition": "metallic"
+      },
+      "components": {},
+      "created_at": "2025-07-11T09:09:37.813602",
+      "updated_at": "2025-07-11T09:09:37.813602"
+    },
+    {
+      "id": "6b48ef67-406b-40ed-ba88-155c50b6290d",
+      "type": "asteroid",
+      "position": [
+        572.3430653735049,
+        615.6319847714882
+      ],
+      "properties": {
+        "name": "Entity 13",
+        "size": "small",
+        "resources": [
+          "iron",
+          "nickel"
+        ],
+        "composition": "rocky"
+      },
+      "components": {},
+      "created_at": "2025-07-11T09:09:37.813608",
+      "updated_at": "2025-07-11T09:09:37.813609"
+    },
+    {
+      "id": "536dbb7a-387a-4ea9-a0e3-6989de6f841f",
+      "type": "space_station",
+      "position": [
+        496.0095265902227,
+        292.61466287272424
+      ],
+      "properties": {
+        "name": "Entity 1",
+        "size": "large",
+        "population": 100,
+        "services": [
+          "trading",
+          "repair"
+        ],
+        "station_type": "research",
+        "capacity": 346.08629205692944
+      },
+      "components": {
+        "trading": {
+          "credits": 1000,
+          "buy_orders": [],
+          "sell_orders": []
+        },
+        "cargo": {
+          "capacity": 100,
+          "current_load": 0,
+          "items": []
+        }
+      },
+      "created_at": "2025-07-11T09:09:37.813621",
+      "updated_at": "2025-07-11T09:09:37.813625"
+    },
+    {
+      "id": "5fc9613c-af6a-4474-9931-497fcda3449e",
+      "type": "space_station",
+      "position": [
+        622.9661250893874,
+        371.36916481108705
+      ],
+      "properties": {
+        "name": "Entity 2",
+        "size": "large",
+        "population": 100,
+        "services": [
+          "trading",
+          "repair"
+        ],
+        "station_type": "trading",
+        "capacity": 406.9827535940873
+      },
+      "components": {
+        "trading": {
+          "credits": 1000,
+          "buy_orders": [],
+          "sell_orders": []
+        },
+        "cargo": {
+          "capacity": 100,
+          "current_load": 0,
+          "items": []
+        }
+      },
+      "created_at": "2025-07-11T09:09:37.813632",
+      "updated_at": "2025-07-11T09:09:37.813634"
+    },
+    {
+      "id": "8d275707-0dca-42d0-9c72-f6eb8da5ae87",
+      "type": "space_station",
+      "position": [
+        480.96315424986557,
+        261.85420044262975
+      ],
+      "properties": {
+        "name": "Entity 3",
+        "size": "large",
+        "population": 100,
+        "services": [
+          "trading",
+          "repair"
+        ],
+        "station_type": "research",
+        "capacity": 119.4932847996232
+      },
+      "components": {
+        "trading": {
+          "credits": 1000,
+          "buy_orders": [],
+          "sell_orders": []
+        },
+        "cargo": {
+          "capacity": 100,
+          "current_load": 0,
+          "items": []
+        }
+      },
+      "created_at": "2025-07-11T09:09:37.813641",
+      "updated_at": "2025-07-11T09:09:37.813643"
+    },
+    {
+      "id": "6f00345b-6193-47c9-9520-a96a51c1deec",
+      "type": "cargo_ship",
+      "position": [
+        714.1788176751708,
+        432.2170265851098
+      ],
+      "properties": {
+        "name": "Entity 1",
+        "size": "medium",
+        "crew": 4.716302327858312,
+        "cargo_capacity": 108.5534726245194
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "cargo": {
+          "capacity": 100,
+          "current_load": 0,
+          "items": []
+        },
+        "trade_mission": {
+          "destination": "Trading Station",
+          "cargo_type": "electronics",
+          "value": 15000
+        }
+      },
+      "created_at": "2025-07-11T09:09:37.813653",
+      "updated_at": "2025-07-11T09:09:37.813772"
+    },
+    {
+      "id": "2a442655-b3d8-41cf-a28b-ed69b4a03fff",
+      "type": "cargo_ship",
+      "position": [
+        780.4945190827846,
+        440.6745605823935
+      ],
+      "properties": {
+        "name": "Entity 2",
+        "size": "medium",
+        "crew": 5.678919679004635,
+        "cargo_capacity": 101.88878038772974
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "cargo": {
+          "capacity": 100,
+          "current_load": 0,
+          "items": []
+        },
+        "trade_mission": {
+          "destination": "Trading Station",
+          "cargo_type": "electronics",
+          "value": 15000
+        }
+      },
+      "created_at": "2025-07-11T09:09:37.813662",
+      "updated_at": "2025-07-11T09:09:37.813776"
+    },
+    {
+      "id": "bdbbae4f-2b83-4a7b-9cf0-bcd7ece4ee80",
+      "type": "cargo_ship",
+      "position": [
+        335.1276890303309,
+        213.45839370161644
+      ],
+      "properties": {
+        "name": "Entity 3",
+        "size": "medium",
+        "crew": 6.739083269957014,
+        "cargo_capacity": 102.39869995039787
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "cargo": {
+          "capacity": 100,
+          "current_load": 0,
+          "items": []
+        },
+        "trade_mission": {
+          "destination": "Trading Station",
+          "cargo_type": "electronics",
+          "value": 15000
+        }
+      },
+      "created_at": "2025-07-11T09:09:37.813670",
+      "updated_at": "2025-07-11T09:09:37.813779"
+    },
+    {
+      "id": "8cd2119d-d812-4303-94ae-cb3816e2449e",
+      "type": "cargo_ship",
+      "position": [
+        493.4059524373346,
+        543.4521943569117
+      ],
+      "properties": {
+        "name": "Entity 4",
+        "size": "medium",
+        "crew": 4.123748298376095,
+        "cargo_capacity": 116.81955227476024
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "cargo": {
+          "capacity": 100,
+          "current_load": 0,
+          "items": []
+        },
+        "trade_mission": {
+          "destination": "Trading Station",
+          "cargo_type": "electronics",
+          "value": 15000
+        }
+      },
+      "created_at": "2025-07-11T09:09:37.813678",
+      "updated_at": "2025-07-11T09:09:37.813781"
+    },
+    {
+      "id": "3fd8d738-2353-4441-9adf-94b7505070ff",
+      "type": "fighter",
+      "position": [
+        519.1644531552474,
+        357.2761966054128
+      ],
+      "properties": {
+        "name": "Entity 1",
+        "size": "small",
+        "crew": 1,
+        "squadron": "Alpha",
+        "pilot_skill": "ace"
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "combat": {
+          "weapon_damage": 10,
+          "weapon_range": 50,
+          "weapon_cooldown": 1.0,
+          "last_fired": 0
+        }
+      },
+      "created_at": "2025-07-11T09:09:37.813689",
+      "updated_at": "2025-07-11T09:09:37.813691"
+    },
+    {
+      "id": "e33d25b4-e848-45a0-841f-565c753cf8ce",
+      "type": "fighter",
+      "position": [
+        621.8951076258159,
+        484.02243590227835
+      ],
+      "properties": {
+        "name": "Entity 2",
+        "size": "small",
+        "crew": 1,
+        "squadron": "Gamma",
+        "pilot_skill": "veteran"
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "combat": {
+          "weapon_damage": 10,
+          "weapon_range": 50,
+          "weapon_cooldown": 1.0,
+          "last_fired": 0
+        }
+      },
+      "created_at": "2025-07-11T09:09:37.813697",
+      "updated_at": "2025-07-11T09:09:37.813699"
+    },
+    {
+      "id": "7426cb1f-ce63-426a-867f-4c674359b4c5",
+      "type": "mining_ship",
+      "position": [
+        429.77414874999914,
+        509.5796156912302
+      ],
+      "properties": {
+        "name": "Entity 1",
+        "size": "medium",
+        "crew": 3,
+        "mining_efficiency": 0.8751877682725528,
+        "cargo_capacity": 52.57717425020657
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "cargo": {
+          "capacity": 100,
+          "current_load": 0,
+          "items": []
+        },
+        "mining": {
+          "mining_rate": 5.0,
+          "mining_range": 20.0,
+          "target_asteroid": null
+        },
+        "mining_operation": {
+          "target_asteroid": "Asteroid Belt",
+          "resource_type": "platinum",
+          "efficiency": 0.8
+        }
+      },
+      "created_at": "2025-07-11T09:09:37.813709",
+      "updated_at": "2025-07-11T09:09:37.813784"
+    },
+    {
+      "id": "767420c6-8d9e-4ca6-bb02-9cbc80b4b2bf",
+      "type": "mining_ship",
+      "position": [
+        385.42991495586034,
+        170.38198999046543
+      ],
+      "properties": {
+        "name": "Entity 2",
+        "size": "medium",
+        "crew": 3,
+        "mining_efficiency": 0.9198744783135786,
+        "cargo_capacity": 77.34208782854961
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "cargo": {
+          "capacity": 100,
+          "current_load": 0,
+          "items": []
+        },
+        "mining": {
+          "mining_rate": 5.0,
+          "mining_range": 20.0,
+          "target_asteroid": null
+        },
+        "mining_operation": {
+          "target_asteroid": "Asteroid Belt",
+          "resource_type": "platinum",
+          "efficiency": 0.8
+        }
+      },
+      "created_at": "2025-07-11T09:09:37.813718",
+      "updated_at": "2025-07-11T09:09:37.813788"
+    },
+    {
+      "id": "b5d6b323-26a3-4cad-945d-43b86266d666",
+      "type": "mining_ship",
+      "position": [
+        412.78536822266653,
+        282.91738330801854
+      ],
+      "properties": {
+        "name": "Entity 3",
+        "size": "medium",
+        "crew": 3,
+        "mining_efficiency": 0.8394357438134402,
+        "cargo_capacity": 31.91994176191141
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "cargo": {
+          "capacity": 100,
+          "current_load": 0,
+          "items": []
+        },
+        "mining": {
+          "mining_rate": 5.0,
+          "mining_range": 20.0,
+          "target_asteroid": null
+        },
+        "mining_operation": {
+          "target_asteroid": "Asteroid Belt",
+          "resource_type": "platinum",
+          "efficiency": 0.8
+        }
+      },
+      "created_at": "2025-07-11T09:09:37.813726",
+      "updated_at": "2025-07-11T09:09:37.813791"
+    }
+  ]
+}

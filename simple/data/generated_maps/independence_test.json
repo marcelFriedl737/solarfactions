@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "created_at": "2025-07-11T09:11:05.613869",
+    "entity_count": 2,
+    "filename": "independence_test"
+  },
+  "entities": [
+    {
+      "id": "7a5e4004-2a98-4f7b-90e4-47b758aa13b0",
+      "type": "test_ship",
+      "position": [
+        100,
+        200
+      ],
+      "properties": {
+        "name": "Test Ship"
+      },
+      "components": {
+        "test": {
+          "value": 42
+        }
+      },
+      "created_at": "2025-07-11T09:11:05.613712",
+      "updated_at": "2025-07-11T09:11:05.613722"
+    },
+    {
+      "id": "aa9ddf67-a093-4e66-80da-2de8294e59f3",
+      "type": "cargo_ship",
+      "position": [
+        0,
+        0
+      ],
+      "properties": {
+        "name": "Factory Ship",
+        "size": "medium",
+        "crew": 5
+      },
+      "components": {
+        "movement": {
+          "max_speed": 100.0,
+          "acceleration": 10.0,
+          "velocity": [
+            0.0,
+            0.0
+          ],
+          "destination": null
+        },
+        "health": {
+          "max_health": 100,
+          "current_health": 100,
+          "shields": 0,
+          "armor": 0
+        },
+        "cargo": {
+          "capacity": 100,
+          "current_load": 0,
+          "items": []
+        }
+      },
+      "created_at": "2025-07-11T09:11:05.613766",
+      "updated_at": "2025-07-11T09:11:05.613771"
+    }
+  ]
+}

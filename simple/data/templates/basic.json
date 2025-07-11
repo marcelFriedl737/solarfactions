@@ -1,0 +1,91 @@
+{
+  "name": "Basic System",
+  "description": "A basic solar system with a star, planets, and some ships",
+  "entities": [
+    {
+      "type": "star",
+      "count": 1,
+      "bounds": {
+        "x": [450, 550],
+        "y": [350, 450]
+      },
+      "properties": {
+        "temperature": [5000, 6000],
+        "luminosity": [0.8, 1.2]
+      }
+    },
+    {
+      "type": "planet",
+      "count": [3, 6],
+      "bounds": {
+        "x": [200, 800],
+        "y": [200, 600]
+      },
+      "properties": {
+        "habitable": [true, false],
+        "size": ["small", "medium", "large"],
+        "atmosphere": ["none", "thin", "thick"]
+      }
+    },
+    {
+      "type": "asteroid",
+      "count": [8, 15],
+      "bounds": {
+        "x": [100, 900],
+        "y": [100, 700]
+      },
+      "properties": {
+        "size": ["small", "medium"],
+        "composition": ["rocky", "metallic", "ice"]
+      }
+    },
+    {
+      "type": "space_station",
+      "count": [1, 3],
+      "bounds": {
+        "x": [300, 700],
+        "y": [250, 550]
+      },
+      "properties": {
+        "station_type": ["trading", "research", "military"],
+        "capacity": [100, 500]
+      }
+    },
+    {
+      "type": "cargo_ship",
+      "count": [3, 8],
+      "bounds": {
+        "x": [200, 800],
+        "y": [200, 600]
+      },
+      "properties": {
+        "cargo_capacity": [50, 200],
+        "crew": [2, 8]
+      }
+    },
+    {
+      "type": "fighter",
+      "count": [2, 6],
+      "bounds": {
+        "x": [250, 750],
+        "y": [250, 550]
+      },
+      "properties": {
+        "squadron": ["Alpha", "Beta", "Gamma", "Delta"],
+        "pilot_skill": ["rookie", "veteran", "ace"]
+      }
+    },
+    {
+      "type": "mining_ship",
+      "count": [1, 4],
+      "bounds": {
+        "x": [150, 850],
+        "y": [150, 650]
+      },
+      "properties": {
+        "mining_efficiency": [0.5, 1.0],
+        "cargo_capacity": [30, 100]
+      }
+    }
+  ]
+}

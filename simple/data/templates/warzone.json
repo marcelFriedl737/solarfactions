@@ -1,0 +1,102 @@
+{
+  "name": "Warzone System",
+  "description": "A contested system with military activity and conflict",
+  "entities": [
+    {
+      "type": "star",
+      "count": 1,
+      "bounds": {
+        "x": [500, 500],
+        "y": [400, 400]
+      },
+      "properties": {
+        "temperature": [5500, 6500],
+        "luminosity": [1.0, 1.5],
+        "strategic_value": "high"
+      }
+    },
+    {
+      "type": "planet",
+      "count": [3, 5],
+      "bounds": {
+        "x": [200, 800],
+        "y": [200, 600]
+      },
+      "properties": {
+        "habitable": [true, false],
+        "size": ["medium", "large"],
+        "fortified": [true, false],
+        "faction_control": ["federation", "empire", "contested"]
+      }
+    },
+    {
+      "type": "asteroid",
+      "count": [10, 20],
+      "bounds": {
+        "x": [100, 900],
+        "y": [100, 700]
+      },
+      "properties": {
+        "size": ["small", "medium", "large"],
+        "composition": ["metallic", "rocky"],
+        "cover": ["none", "light", "heavy"]
+      }
+    },
+    {
+      "type": "space_station",
+      "count": [3, 6],
+      "bounds": {
+        "x": [300, 700],
+        "y": [250, 550]
+      },
+      "properties": {
+        "station_type": ["military", "command", "supply"],
+        "capacity": [300, 1000],
+        "faction": ["federation", "empire", "neutral"],
+        "fortification": ["light", "heavy", "fortress"]
+      }
+    },
+    {
+      "type": "fighter",
+      "count": [8, 20],
+      "bounds": {
+        "x": [200, 800],
+        "y": [200, 600]
+      },
+      "properties": {
+        "squadron": ["Alpha", "Beta", "Gamma", "Delta", "Epsilon"],
+        "role": ["interceptor", "bomber", "assault"],
+        "pilot_skill": ["veteran", "ace", "elite"],
+        "faction": ["federation", "empire"]
+      }
+    },
+    {
+      "type": "cargo_ship",
+      "count": [2, 6],
+      "bounds": {
+        "x": [250, 750],
+        "y": [250, 550]
+      },
+      "properties": {
+        "cargo_capacity": [80, 200],
+        "mission": ["supply", "evacuation", "medical"],
+        "escort": [true, false],
+        "faction": ["federation", "empire", "civilian"]
+      }
+    },
+    {
+      "type": "mining_ship",
+      "count": [1, 3],
+      "bounds": {
+        "x": [150, 850],
+        "y": [150, 650]
+      },
+      "properties": {
+        "mining_efficiency": [0.4, 0.8],
+        "cargo_capacity": [40, 80],
+        "armed": [true, false],
+        "faction": ["federation", "empire", "neutral"]
+      }
+    }
+  ]
+}

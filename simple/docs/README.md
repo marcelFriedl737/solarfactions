@@ -5,11 +5,13 @@ A streamlined space map generation and visualization system that demonstrates ho
 ## Features
 
 - **Simple Entity System**: Uses tuples for positions and dictionaries for properties
+- **JSON-Based Components**: Configurable and extendable components through JSON files
 - **Template-Based Generation**: Generate maps using predefined templates
 - **Easy Data Persistence**: Save and load maps with JSON serialization
 - **Interactive Visualization**: Real-time map viewer with pygame
 - **Comprehensive Testing**: Full test coverage with integration tests
 - **Self-Contained**: No dependencies on external code
+- **Component Manager**: Utility for managing and creating custom components
 
 ## Quick Start
 
@@ -102,10 +104,14 @@ simple/
 ├── data_manager.py      # Data persistence
 ├── generator.py         # Map generation
 ├── renderer.py          # Visual display
+├── component_manager.py # Component management utility
 ├── config/
 │   ├── __init__.py      # Configuration exports
 │   └── config.py        # System configuration
 ├── data/
+│   ├── components/      # Component definitions
+│   │   ├── components.json       # Core components
+│   │   └── custom_components.json # Custom components
 │   ├── templates/       # Map generation templates
 │   ├── generated_maps/  # Auto-generated maps
 │   ├── saved_maps/      # User-saved maps
@@ -172,6 +178,45 @@ This simplified system demonstrates several important principles:
 The goal is to show that you can create powerful, flexible systems without overengineering. This approach makes the code easier to understand, maintain, and extend.
 
 ## Examples
+
+### Custom Component Example
+
+```python
+from simple.entities.entity import Entity, create_component, register_component
+
+# Create a custom component definition
+shield_component = {
+    "description": "Advanced shield system",
+    "properties": {
+        "shield_capacity": {"type": "integer", "default": 1000},
+        "recharge_rate": {"type": "float", "default": 50.0},
+        "active": {"type": "boolean", "default": true}
+    }
+}
+
+# Register the component
+register_component('advanced_shields', shield_component)
+
+# Use it on an entity
+ship = Entity('battleship', (400, 300), name='Defender')
+ship.add_component('advanced_shields', shield_capacity=1500, recharge_rate=75.0)
+```
+
+### Component Management
+
+```bash
+# List all available components
+python component_manager.py list
+
+# Show component details
+python component_manager.py show movement
+
+# Create a new component interactively
+python component_manager.py create
+
+# Validate component files
+python component_manager.py validate data/components/custom_components.json
+```
 
 ### Creating Custom Entities
 

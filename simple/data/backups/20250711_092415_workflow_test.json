@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "created_at": "2025-07-11T09:28:10.593455",
+    "created_at": "2025-07-11T09:09:29.699764",
     "entity_count": 28,
     "filename": "workflow_test"
   },
   "entities": [
     {
-      "id": "e0e7c57e-96e6-4dc8-809c-0e3c78c2141b",
+      "id": "2dcf6527-b2eb-45eb-a328-15dc1e21ce0e",
       "type": "star",
       "position": [
         455.23635988509443,
@@ -20,11 +20,11 @@
         "luminosity": 0.8430800939753756
       },
       "components": {},
-      "created_at": "2025-07-11T09:28:10.592812",
-      "updated_at": "2025-07-11T09:28:10.592813"
+      "created_at": "2025-07-11T09:09:29.699110",
+      "updated_at": "2025-07-11T09:09:29.699110"
     },
     {
-      "id": "bcd3e875-7d37-47f7-b31c-0eef41f63402",
+      "id": "ae467a83-383b-41d0-ab9e-29d3ad9e22e3",
       "type": "planet",
       "position": [
         427.47459949345307,
@@ -38,11 +38,11 @@
         "atmosphere": "none"
       },
       "components": {},
-      "created_at": "2025-07-11T09:28:10.592824",
-      "updated_at": "2025-07-11T09:28:10.592825"
+      "created_at": "2025-07-11T09:09:29.699123",
+      "updated_at": "2025-07-11T09:09:29.699123"
     },
     {
-      "id": "7b53add2-c60e-4712-9fef-5ec3b5f80ab4",
+      "id": "7b02fea2-9e17-49b4-8c37-6bfecbffba97",
       "type": "planet",
       "position": [
         404.47893672624207,
@@ -56,11 +56,11 @@
         "atmosphere": "thick"
       },
       "components": {},
-      "created_at": "2025-07-11T09:28:10.592832",
-      "updated_at": "2025-07-11T09:28:10.592832"
+      "created_at": "2025-07-11T09:09:29.699130",
+      "updated_at": "2025-07-11T09:09:29.699131"
     },
     {
-      "id": "e9e5cd0c-0a55-49ee-97f3-665bdf915587",
+      "id": "a5e2fa4a-8e64-4469-9a9a-d22c2e287cb0",
       "type": "planet",
       "position": [
         281.0344755823164,
@@ -74,11 +74,11 @@
         "atmosphere": "thin"
       },
       "components": {},
-      "created_at": "2025-07-11T09:28:10.592839",
-      "updated_at": "2025-07-11T09:28:10.592839"
+      "created_at": "2025-07-11T09:09:29.699138",
+      "updated_at": "2025-07-11T09:09:29.699138"
     },
     {
-      "id": "7343b1cc-08dd-48e3-aac4-36650ea3dd9c",
+      "id": "e3813e31-c7a7-44b8-a0c1-3bce2d6b1973",
       "type": "asteroid",
       "position": [
         181.62937703966293,
@@ -94,11 +94,11 @@
         "composition": "metallic"
       },
       "components": {},
-      "created_at": "2025-07-11T09:28:10.592852",
-      "updated_at": "2025-07-11T09:28:10.592852"
+      "created_at": "2025-07-11T09:09:29.699151",
+      "updated_at": "2025-07-11T09:09:29.699152"
     },
     {
-      "id": "085b81a2-b09c-464a-89e7-fea02f1bbea2",
+      "id": "ad81c245-63c1-403e-8f14-8e4ee42fd45b",
       "type": "asteroid",
       "position": [
         633.7105342279378,
@@ -114,11 +114,11 @@
         "composition": "rocky"
       },
       "components": {},
-      "created_at": "2025-07-11T09:28:10.592858",
-      "updated_at": "2025-07-11T09:28:10.592858"
+      "created_at": "2025-07-11T09:09:29.699158",
+      "updated_at": "2025-07-11T09:09:29.699158"
     },
     {
-      "id": "8ba47b4f-e372-4d95-9cbf-cb6a734ed71a",
+      "id": "421f1864-d330-474a-9a3e-992d63dc72b8",
       "type": "asteroid",
       "position": [
         825.2863825633286,
@@ -134,11 +134,11 @@
         "composition": "metallic"
       },
       "components": {},
-      "created_at": "2025-07-11T09:28:10.592864",
-      "updated_at": "2025-07-11T09:28:10.592864"
+      "created_at": "2025-07-11T09:09:29.699164",
+      "updated_at": "2025-07-11T09:09:29.699165"
     },
     {
-      "id": "52e1c106-e944-4bf9-9c56-935c42615135",
+      "id": "b16a2502-481a-4097-bda9-52a75151cd4a",
       "type": "asteroid",
       "position": [
         444.5100699270253,
@@ -154,11 +154,11 @@
         "composition": "rocky"
       },
       "components": {},
-      "created_at": "2025-07-11T09:28:10.592870",
-      "updated_at": "2025-07-11T09:28:10.592870"
+      "created_at": "2025-07-11T09:09:29.699170",
+      "updated_at": "2025-07-11T09:09:29.699171"
     },
     {
-      "id": "837782a8-7bad-4405-8d77-160d785a3f4e",
+      "id": "53f00998-32e9-49c5-a09f-7ad8341029d0",
       "type": "asteroid",
       "position": [
         475.4341413845875,
@@ -174,11 +174,11 @@
         "composition": "metallic"
       },
       "components": {},
-      "created_at": "2025-07-11T09:28:10.592876",
-      "updated_at": "2025-07-11T09:28:10.592876"
+      "created_at": "2025-07-11T09:09:29.699176",
+      "updated_at": "2025-07-11T09:09:29.699176"
     },
     {
-      "id": "440bb03e-03c3-4cbc-8a08-f8111fbf949b",
+      "id": "345ff0cd-40a6-4c1a-a4f6-1b2a872a483d",
       "type": "asteroid",
       "position": [
         344.0777024237046,
@@ -194,11 +194,11 @@
         "composition": "rocky"
       },
       "components": {},
-      "created_at": "2025-07-11T09:28:10.592882",
-      "updated_at": "2025-07-11T09:28:10.592883"
+      "created_at": "2025-07-11T09:09:29.699182",
+      "updated_at": "2025-07-11T09:09:29.699182"
     },
     {
-      "id": "17dc68eb-d78b-4c91-b5dd-0f427deb2aa8",
+      "id": "8a49ca2c-182f-4aad-8032-07636cedfbec",
       "type": "asteroid",
       "position": [
         486.36900905884784,
@@ -214,11 +214,11 @@
         "composition": "ice"
       },
       "components": {},
-      "created_at": "2025-07-11T09:28:10.592888",
-      "updated_at": "2025-07-11T09:28:10.592888"
+      "created_at": "2025-07-11T09:09:29.699188",
+      "updated_at": "2025-07-11T09:09:29.699188"
     },
     {
-      "id": "409a4f3a-e5c3-4a09-8660-3ec970d94438",
+      "id": "6d65bf00-1d66-49c2-9569-0cfb44e26db1",
       "type": "asteroid",
       "position": [
         611.0052497808632,
@@ -234,11 +234,11 @@
         "composition": "ice"
       },
       "components": {},
-      "created_at": "2025-07-11T09:28:10.592894",
-      "updated_at": "2025-07-11T09:28:10.592894"
+      "created_at": "2025-07-11T09:09:29.699194",
+      "updated_at": "2025-07-11T09:09:29.699194"
     },
     {
-      "id": "53ffa005-1f5f-4c1a-a722-abf701725d9b",
+      "id": "9e8b9f46-c532-4a0d-8db2-b93f64f2d349",
       "type": "asteroid",
       "position": [
         868.4507984832713,
@@ -254,11 +254,11 @@
         "composition": "rocky"
       },
       "components": {},
-      "created_at": "2025-07-11T09:28:10.592900",
-      "updated_at": "2025-07-11T09:28:10.592900"
+      "created_at": "2025-07-11T09:09:29.699199",
+      "updated_at": "2025-07-11T09:09:29.699200"
     },
     {
-      "id": "c8604afb-77df-4371-ab4f-f6ba0ba2a26f",
+      "id": "f1abc8c2-049c-4761-b7ce-cae43d348648",
       "type": "asteroid",
       "position": [
         814.3530474262183,
@@ -274,11 +274,11 @@
         "composition": "rocky"
       },
       "components": {},
-      "created_at": "2025-07-11T09:28:10.592906",
-      "updated_at": "2025-07-11T09:28:10.592906"
+      "created_at": "2025-07-11T09:09:29.699206",
+      "updated_at": "2025-07-11T09:09:29.699206"
     },
     {
-      "id": "e05fe47d-dc41-48e6-9c45-f7ef03dc8001",
+      "id": "98628344-1a4f-406b-9da9-5699f550684b",
       "type": "asteroid",
       "position": [
         447.50934055350547,
@@ -294,11 +294,11 @@
         "composition": "ice"
       },
       "components": {},
-      "created_at": "2025-07-11T09:28:10.592912",
-      "updated_at": "2025-07-11T09:28:10.592912"
+      "created_at": "2025-07-11T09:09:29.699211",
+      "updated_at": "2025-07-11T09:09:29.699212"
     },
     {
-      "id": "dc791bea-2581-4a35-be53-4626eed014d8",
+      "id": "3c6bff4a-bb46-44fc-913f-dd96aef7b113",
       "type": "asteroid",
       "position": [
         737.1740440527059,
@@ -314,11 +314,11 @@
         "composition": "ice"
       },
       "components": {},
-      "created_at": "2025-07-11T09:28:10.592918",
-      "updated_at": "2025-07-11T09:28:10.592918"
+      "created_at": "2025-07-11T09:09:29.699218",
+      "updated_at": "2025-07-11T09:09:29.699218"
     },
     {
-      "id": "a5635f6f-7120-4696-99d7-9c8abe6a5e4f",
+      "id": "404dc5af-55e0-4312-a00e-3745814fc9f0",
       "type": "asteroid",
       "position": [
         766.8086200126199,
@@ -334,11 +334,11 @@
         "composition": "metallic"
       },
       "components": {},
-      "created_at": "2025-07-11T09:28:10.592923",
-      "updated_at": "2025-07-11T09:28:10.592924"
+      "created_at": "2025-07-11T09:09:29.699223",
+      "updated_at": "2025-07-11T09:09:29.699224"
     },
     {
-      "id": "aa12bebf-dbb3-4a28-aae6-56e7857294c4",
+      "id": "3c46037c-9c97-4263-964c-267754f82656",
       "type": "asteroid",
       "position": [
         435.5969987781145,
@@ -354,11 +354,11 @@
         "composition": "ice"
       },
       "components": {},
-      "created_at": "2025-07-11T09:28:10.592929",
-      "updated_at": "2025-07-11T09:28:10.592930"
+      "created_at": "2025-07-11T09:09:29.699229",
+      "updated_at": "2025-07-11T09:09:29.699230"
     },
     {
-      "id": "1da49af7-41b1-481a-85ca-3d2995c26129",
+      "id": "8d786a26-bce1-4747-b4ac-d41317daca4b",
       "type": "asteroid",
       "position": [
         777.8734252105544,
@@ -374,11 +374,11 @@
         "composition": "rocky"
       },
       "components": {},
-      "created_at": "2025-07-11T09:28:10.592935",
-      "updated_at": "2025-07-11T09:28:10.592936"
+      "created_at": "2025-07-11T09:09:29.699235",
+      "updated_at": "2025-07-11T09:09:29.699236"
     },
     {
-      "id": "a8e93b3a-da85-49e9-b1af-4e460578f5da",
+      "id": "25f2fbce-6580-46b8-95ae-da64b30373b7",
       "type": "space_station",
       "position": [
         696.7831091176868,
@@ -399,24 +399,19 @@
         "trading": {
           "credits": 1000,
           "buy_orders": [],
-          "sell_orders": [],
-          "reputation": 0,
-          "trade_routes": []
+          "sell_orders": []
         },
         "cargo": {
           "capacity": 100,
           "current_load": 0,
-          "items": [],
-          "cargo_types": [
-            "general"
-          ]
+          "items": []
         }
       },
-      "created_at": "2025-07-11T09:28:10.592944",
-      "updated_at": "2025-07-11T09:28:10.592949"
+      "created_at": "2025-07-11T09:09:29.699244",
+      "updated_at": "2025-07-11T09:09:29.699246"
     },
     {
-      "id": "8270b4e9-1a3c-4d7e-a2e1-7b34cea9bde7",
+      "id": "864ad6b3-73be-4249-bc64-29e5bc5099fd",
       "type": "cargo_ship",
       "position": [
         473.8041931085749,
@@ -436,32 +431,25 @@
             0.0,
             0.0
           ],
-          "destination": null,
-          "fuel": 100.0,
-          "fuel_consumption": 1.0
+          "destination": null
         },
         "health": {
           "max_health": 100,
           "current_health": 100,
           "shields": 0,
-          "max_shields": 50,
-          "armor": 0,
-          "shield_recharge_rate": 5.0
+          "armor": 0
         },
         "cargo": {
           "capacity": 100,
           "current_load": 0,
-          "items": [],
-          "cargo_types": [
-            "general"
-          ]
+          "items": []
         }
       },
-      "created_at": "2025-07-11T09:28:10.592958",
-      "updated_at": "2025-07-11T09:28:10.592964"
+      "created_at": "2025-07-11T09:09:29.699255",
+      "updated_at": "2025-07-11T09:09:29.699257"
     },
     {
-      "id": "4653a2f7-be1a-48b9-953c-f134bd715d43",
+      "id": "532b259f-24f8-498b-908e-84a5e2f81934",
       "type": "cargo_ship",
       "position": [
         679.3333277942875,
@@ -481,32 +469,25 @@
             0.0,
             0.0
           ],
-          "destination": null,
-          "fuel": 100.0,
-          "fuel_consumption": 1.0
+          "destination": null
         },
         "health": {
           "max_health": 100,
           "current_health": 100,
           "shields": 0,
-          "max_shields": 50,
-          "armor": 0,
-          "shield_recharge_rate": 5.0
+          "armor": 0
         },
         "cargo": {
           "capacity": 100,
           "current_load": 0,
-          "items": [],
-          "cargo_types": [
-            "general"
-          ]
+          "items": []
         }
       },
-      "created_at": "2025-07-11T09:28:10.592970",
-      "updated_at": "2025-07-11T09:28:10.592976"
+      "created_at": "2025-07-11T09:09:29.699263",
+      "updated_at": "2025-07-11T09:09:29.699265"
     },
     {
-      "id": "a9330d89-881b-4df9-af25-9be19eadd787",
+      "id": "1ff929c6-c8d5-46e3-b0ca-1d50c99d7b80",
       "type": "cargo_ship",
       "position": [
         772.8032697779025,
@@ -526,32 +507,25 @@
             0.0,
             0.0
           ],
-          "destination": null,
-          "fuel": 100.0,
-          "fuel_consumption": 1.0
+          "destination": null
         },
         "health": {
           "max_health": 100,
           "current_health": 100,
           "shields": 0,
-          "max_shields": 50,
-          "armor": 0,
-          "shield_recharge_rate": 5.0
+          "armor": 0
         },
         "cargo": {
           "capacity": 100,
           "current_load": 0,
-          "items": [],
-          "cargo_types": [
-            "general"
-          ]
+          "items": []
         }
       },
-      "created_at": "2025-07-11T09:28:10.592982",
-      "updated_at": "2025-07-11T09:28:10.592987"
+      "created_at": "2025-07-11T09:09:29.699271",
+      "updated_at": "2025-07-11T09:09:29.699273"
     },
     {
-      "id": "1a28f46d-aca7-4b01-bd87-473dfe6363cb",
+      "id": "9e7b5ad9-6880-4d1d-bd29-6253ad0b1ba7",
       "type": "cargo_ship",
       "position": [
         200.21320033947,
@@ -571,32 +545,25 @@
             0.0,
             0.0
           ],
-          "destination": null,
-          "fuel": 100.0,
-          "fuel_consumption": 1.0
+          "destination": null
         },
         "health": {
           "max_health": 100,
           "current_health": 100,
           "shields": 0,
-          "max_shields": 50,
-          "armor": 0,
-          "shield_recharge_rate": 5.0
+          "armor": 0
         },
         "cargo": {
           "capacity": 100,
           "current_load": 0,
-          "items": [],
-          "cargo_types": [
-            "general"
-          ]
+          "items": []
         }
       },
-      "created_at": "2025-07-11T09:28:10.592993",
-      "updated_at": "2025-07-11T09:28:10.592999"
+      "created_at": "2025-07-11T09:09:29.699278",
+      "updated_at": "2025-07-11T09:09:29.699280"
     },
     {
-      "id": "72c80253-c3ce-4e4f-8dde-597fc9d79822",
+      "id": "78fa7371-7166-4986-b282-358004f2c0c2",
       "type": "fighter",
       "position": [
         742.6740874441637,
@@ -617,32 +584,26 @@
             0.0,
             0.0
           ],
-          "destination": null,
-          "fuel": 100.0,
-          "fuel_consumption": 1.0
+          "destination": null
         },
         "health": {
           "max_health": 100,
           "current_health": 100,
           "shields": 0,
-          "max_shields": 50,
-          "armor": 0,
-          "shield_recharge_rate": 5.0
+          "armor": 0
         },
         "combat": {
           "weapon_damage": 10,
-          "weapon_range": 50.0,
+          "weapon_range": 50,
           "weapon_cooldown": 1.0,
-          "last_fired": 0.0,
-          "weapon_type": "laser",
-          "ammunition": 100
+          "last_fired": 0
         }
       },
-      "created_at": "2025-07-11T09:28:10.593007",
-      "updated_at": "2025-07-11T09:28:10.593013"
+      "created_at": "2025-07-11T09:09:29.699289",
+      "updated_at": "2025-07-11T09:09:29.699291"
     },
     {
-      "id": "e816f083-3a8f-4ce2-a2bb-f2df170d2276",
+      "id": "ed7011e6-552f-4dac-93fe-a4fbe19815ae",
       "type": "fighter",
       "position": [
         486.2553702035217,
@@ -663,32 +624,26 @@
             0.0,
             0.0
           ],
-          "destination": null,
-          "fuel": 100.0,
-          "fuel_consumption": 1.0
+          "destination": null
         },
         "health": {
           "max_health": 100,
           "current_health": 100,
           "shields": 0,
-          "max_shields": 50,
-          "armor": 0,
-          "shield_recharge_rate": 5.0
+          "armor": 0
         },
         "combat": {
           "weapon_damage": 10,
-          "weapon_range": 50.0,
+          "weapon_range": 50,
           "weapon_cooldown": 1.0,
-          "last_fired": 0.0,
-          "weapon_type": "laser",
-          "ammunition": 100
+          "last_fired": 0
         }
       },
-      "created_at": "2025-07-11T09:28:10.593019",
-      "updated_at": "2025-07-11T09:28:10.593025"
+      "created_at": "2025-07-11T09:09:29.699297",
+      "updated_at": "2025-07-11T09:09:29.699299"
     },
     {
-      "id": "02ee69d3-f1d2-4b6f-8721-f82e2a4c3c39",
+      "id": "5da534c8-0061-4fd2-acab-7fd32109e4ee",
       "type": "mining_ship",
       "position": [
         768.716096686023,
@@ -709,39 +664,30 @@
             0.0,
             0.0
           ],
-          "destination": null,
-          "fuel": 100.0,
-          "fuel_consumption": 1.0
+          "destination": null
         },
         "health": {
           "max_health": 100,
           "current_health": 100,
           "shields": 0,
-          "max_shields": 50,
-          "armor": 0,
-          "shield_recharge_rate": 5.0
+          "armor": 0
         },
         "cargo": {
           "capacity": 100,
           "current_load": 0,
-          "items": [],
-          "cargo_types": [
-            "general"
-          ]
+          "items": []
         },
         "mining": {
           "mining_rate": 5.0,
           "mining_range": 20.0,
-          "target_asteroid": null,
-          "mining_efficiency": 1.0,
-          "specialized_resources": []
+          "target_asteroid": null
         }
       },
-      "created_at": "2025-07-11T09:28:10.593033",
-      "updated_at": "2025-07-11T09:28:10.593040"
+      "created_at": "2025-07-11T09:09:29.699313",
+      "updated_at": "2025-07-11T09:09:29.699316"
     },
     {
-      "id": "e379d633-1ead-4284-a0b9-aa53db63909e",
+      "id": "ba87d814-b632-423b-8c4d-8de52fd4597d",
       "type": "mining_ship",
       "position": [
         652.4025351465125,
@@ -762,36 +708,27 @@
             0.0,
             0.0
           ],
-          "destination": null,
-          "fuel": 100.0,
-          "fuel_consumption": 1.0
+          "destination": null
         },
         "health": {
           "max_health": 100,
           "current_health": 100,
           "shields": 0,
-          "max_shields": 50,
-          "armor": 0,
-          "shield_recharge_rate": 5.0
+          "armor": 0
         },
         "cargo": {
           "capacity": 100,
           "current_load": 0,
-          "items": [],
-          "cargo_types": [
-            "general"
-          ]
+          "items": []
         },
         "mining": {
           "mining_rate": 5.0,
           "mining_range": 20.0,
-          "target_asteroid": null,
-          "mining_efficiency": 1.0,
-          "specialized_resources": []
+          "target_asteroid": null
         }
       },
-      "created_at": "2025-07-11T09:28:10.593046",
-      "updated_at": "2025-07-11T09:28:10.593053"
+      "created_at": "2025-07-11T09:09:29.699322",
+      "updated_at": "2025-07-11T09:09:29.699324"
     }
   ]
 }

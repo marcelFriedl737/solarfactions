@@ -116,8 +116,9 @@ class SimpleRenderer:
             return
         
         # Get entity display properties
-        color = self.entity_colors.get(entity.type, self.entity_colors['default'])
-        base_size = self.entity_sizes.get(entity.type, self.entity_sizes['default'])
+        entity_type = getattr(entity, 'type', 'default')
+        color = self.entity_colors.get(entity_type, self.entity_colors['default'])
+        base_size = self.entity_sizes.get(entity_type, self.entity_sizes['default'])
         size = max(2, int(base_size * self.zoom_level))
         
         # Highlight selected entity
@@ -127,7 +128,7 @@ class SimpleRenderer:
             color = tuple(min(255, c + 50) for c in color)  # Brighten color
         
         # Draw entity based on type
-        if entity.type == 'star':
+        if entity_type == 'star':
             # Draw star with glow effect
             for i in range(3):
                 alpha_color = (*color, 100 - i * 30)
@@ -135,12 +136,12 @@ class SimpleRenderer:
                 pygame.draw.circle(self.screen, color, screen_pos, glow_size - i)
             pygame.draw.circle(self.screen, (255, 255, 255), screen_pos, size // 2)
         
-        elif entity.type == 'planet':
+        elif entity_type == 'planet':
             # Draw planet
             pygame.draw.circle(self.screen, color, screen_pos, size)
             pygame.draw.circle(self.screen, (255, 255, 255), screen_pos, size, 1)
         
-        elif entity.type == 'asteroid':
+        elif entity_type == 'asteroid':
             # Draw asteroid as rough circle
             points = []
             import math
@@ -152,13 +153,13 @@ class SimpleRenderer:
                 points.append((x, y))
             pygame.draw.polygon(self.screen, color, points)
         
-        elif entity.type == 'space_station':
+        elif entity_type == 'space_station':
             # Draw space station as square
             rect = pygame.Rect(screen_pos[0] - size, screen_pos[1] - size, size * 2, size * 2)
             pygame.draw.rect(self.screen, color, rect)
             pygame.draw.rect(self.screen, (255, 255, 255), rect, 1)
         
-        elif entity.type in ['cargo_ship', 'fighter', 'mining_ship']:
+        elif entity_type in ['cargo_ship', 'fighter', 'mining_ship']:
             # Draw ships as triangles
             points = [
                 (screen_pos[0], screen_pos[1] - size),
@@ -173,7 +174,7 @@ class SimpleRenderer:
         
         # Draw label if enabled and zoom level is sufficient
         if self.show_labels and self.zoom_level > 0.5:
-            name = entity.get_property('name', entity.type)
+            name = getattr(entity, 'name', entity_type)
             if len(name) > 20:
                 name = name[:17] + "..."
             
@@ -230,22 +231,28 @@ class SimpleRenderer:
         y_offset = 25
         
         # Entity details
+        entity_type = getattr(entity, 'type', 'unknown')
+        entity_name = getattr(entity, 'name', entity_type)
+        entity_id = getattr(entity, 'id', 'unknown')
+        position = getattr(entity, 'position', (0, 0))
+        
         info_lines = [
-            f"Selected: {entity.get_property('name', entity.type)}",
-            f"Type: {entity.type}",
-            f"ID: {entity.id[:8]}...",
-            f"Position: ({entity.position[0]:.1f}, {entity.position[1]:.1f})",
+            f"Selected: {entity_name}",
+            f"Type: {entity_type}",
+            f"ID: {entity_id[:8]}...",
+            f"Position: ({position[0]:.1f}, {position[1]:.1f})",
             "",
             "Properties:"
         ]
         
-        # Add properties
-        for key, value in entity.properties.items():
-            if key != 'name':  # Already shown above
-                info_lines.append(f"  {key}: {value}")
+        # Add properties if they exist
+        if hasattr(entity, 'properties'):
+            for key, value in entity.properties.items():
+                if key != 'name':  # Already shown above
+                    info_lines.append(f"  {key}: {value}")
         
-        # Add components
-        if entity.components:
+        # Add components if they exist
+        if hasattr(entity, 'components') and entity.components:
             info_lines.append("")
             info_lines.append("Components:")
             for component_name, component_data in entity.components.items():
@@ -266,12 +273,16 @@ class SimpleRenderer:
     def find_entity_at_position(self, world_pos: Tuple[float, float], entities: List[Entity]) -> Optional[Entity]:
         """Find entity at given world position"""
         for entity in entities:
+            if not hasattr(entity, 'position'):
+                continue
+                
             dx = entity.position[0] - world_pos[0]
             dy = entity.position[1] - world_pos[1]
             distance = (dx * dx + dy * dy) ** 0.5
             
             # Check if click is within entity bounds
-            entity_size = self.entity_sizes.get(entity.type, self.entity_sizes['default'])
+            entity_type = getattr(entity, 'type', 'default')
+            entity_size = self.entity_sizes.get(entity_type, self.entity_sizes['default'])
             if distance <= entity_size:
                 return entity
         
@@ -321,6 +332,63 @@ class SimpleRenderer:
         
         return True
     
+    def render(self, entities: List[Entity]):
+        """Render a frame with the given entities"""
+        # Clear screen
+        self.screen.fill(self.background_color)
+        
+        # Draw grid
+        self.draw_grid()
+        
+        # Draw entities
+        for entity in entities:
+            self.draw_entity(entity)
+        
+        # Draw UI
+        self.draw_info_panel(entities)
+        if self.selected_entity:
+            self.draw_entity_info(self.selected_entity)
+        
+        # Update display
+        pygame.display.flip()
+    
+    def handle_event(self, event):
+        """Handle a single pygame event"""
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_g:
+                self.show_grid = not self.show_grid
+            elif event.key == pygame.K_l:
+                self.show_labels = not self.show_labels
+            elif event.key == pygame.K_i:
+                self.show_info = not self.show_info
+        
+        elif event.type == pygame.MOUSEBUTTONDOWN:
+            if event.button == 1:  # Left click
+                world_pos = self.screen_to_world(event.pos)
+                # We need entities to find the selected one, but this is called per event
+                # For now, just handle the interaction
+                self.mouse_dragging = True
+                self.last_mouse_pos = event.pos
+            
+            elif event.button == 4:  # Mouse wheel up
+                self.zoom_level = min(self.max_zoom, self.zoom_level * 1.1)
+            
+            elif event.button == 5:  # Mouse wheel down
+                self.zoom_level = max(self.min_zoom, self.zoom_level / 1.1)
+        
+        elif event.type == pygame.MOUSEBUTTONUP:
+            if event.button == 1:
+                self.mouse_dragging = False
+        
+        elif event.type == pygame.MOUSEMOTION:
+            if self.mouse_dragging and self.last_mouse_pos:
+                # Pan view
+                dx = (event.pos[0] - self.last_mouse_pos[0]) / self.zoom_level
+                dy = (event.pos[1] - self.last_mouse_pos[1]) / self.zoom_level
+                self.view_offset = (self.view_offset[0] - dx, self.view_offset[1] - dy)
+            
+            self.last_mouse_pos = event.pos
+    
     def run(self, entities: List[Entity]):
         """Main rendering loop"""
         print(f"Starting renderer with {len(entities)} entities")
@@ -338,23 +406,9 @@ class SimpleRenderer:
             # Handle events
             running = self.handle_events(entities)
             
-            # Clear screen
-            self.screen.fill(self.background_color)
+            # Render frame
+            self.render(entities)
             
-            # Draw grid
-            self.draw_grid()
-            
-            # Draw entities
-            for entity in entities:
-                self.draw_entity(entity)
-            
-            # Draw UI
-            self.draw_info_panel(entities)
-            if self.selected_entity:
-                self.draw_entity_info(self.selected_entity)
-            
-            # Update display
-            pygame.display.flip()
             self.clock.tick(60)  # 60 FPS
         
         pygame.quit()

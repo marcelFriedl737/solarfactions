@@ -1,0 +1,77 @@
+{
+  "stealth": {
+    "description": "Stealth and cloaking capabilities",
+    "properties": {
+      "stealth_rating": {
+        "type": "integer",
+        "default": 0,
+        "description": "Stealth effectiveness rating"
+      },
+      "cloaking_energy": {
+        "type": "float",
+        "default": 100.0,
+        "description": "Energy available for cloaking"
+      },
+      "cloaking_active": {
+        "type": "boolean",
+        "default": false,
+        "description": "Whether cloaking is currently active"
+      },
+      "energy_consumption": {
+        "type": "float",
+        "default": 10.0,
+        "description": "Energy consumption rate while cloaked"
+      }
+    }
+  },
+  "diplomatic": {
+    "description": "Diplomatic relations and faction interactions",
+    "properties": {
+      "faction": {
+        "type": "string",
+        "default": "neutral",
+        "description": "Entity's faction allegiance"
+      },
+      "diplomatic_immunity": {
+        "type": "boolean",
+        "default": false,
+        "description": "Whether entity has diplomatic immunity"
+      },
+      "relations": {
+        "type": "object",
+        "default": {},
+        "description": "Relationships with other factions"
+      },
+      "negotiation_skill": {
+        "type": "integer",
+        "default": 50,
+        "description": "Diplomatic negotiation skill level"
+      }
+    }
+  },
+  "exploration": {
+    "description": "Exploration and discovery capabilities",
+    "properties": {
+      "exploration_range": {
+        "type": "float",
+        "default": 200.0,
+        "description": "Maximum exploration range"
+      },
+      "discovered_locations": {
+        "type": "array",
+        "default": [],
+        "description": "List of discovered locations"
+      },
+      "mapping_accuracy": {
+        "type": "float",
+        "default": 0.8,
+        "description": "Accuracy of mapping systems"
+      },
+      "survey_equipment": {
+        "type": "array",
+        "default": ["basic_scanner"],
+        "description": "Available survey equipment"
+      }
+    }
+  }
+}

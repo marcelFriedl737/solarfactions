@@ -1,0 +1,88 @@
+{
+    "behaviors": [
+        {
+            "name": "slow_patrol",
+            "type": "linear",
+            "max_speed": 25.0,
+            "enabled": true
+        },
+        {
+            "name": "fast_patrol",
+            "type": "linear",
+            "max_speed": 80.0,
+            "enabled": true
+        },
+        {
+            "name": "planet_orbit",
+            "type": "circular",
+            "center": [0.0, 0.0],
+            "radius": 120.0,
+            "angular_speed": 0.3,
+            "enabled": true
+        },
+        {
+            "name": "station_orbit",
+            "type": "circular",
+            "center": [0.0, 0.0],
+            "radius": 80.0,
+            "angular_speed": 0.8,
+            "enabled": true
+        },
+        {
+            "name": "security_patrol",
+            "type": "patrol",
+            "waypoints": [
+                [150.0, 150.0],
+                [250.0, 150.0],
+                [250.0, 250.0],
+                [150.0, 250.0]
+            ],
+            "speed": 35.0,
+            "arrival_tolerance": 12.0,
+            "enabled": true
+        },
+        {
+            "name": "cargo_route",
+            "type": "patrol",
+            "waypoints": [
+                [100.0, 100.0],
+                [400.0, 100.0],
+                [400.0, 300.0],
+                [100.0, 300.0]
+            ],
+            "speed": 28.0,
+            "arrival_tolerance": 15.0,
+            "enabled": true
+        },
+        {
+            "name": "exploration",
+            "type": "wander",
+            "speed": 20.0,
+            "direction_change_interval": 4.0,
+            "max_direction_change": 1.2,
+            "enabled": true
+        },
+        {
+            "name": "aggressive_wander",
+            "type": "wander",
+            "speed": 40.0,
+            "direction_change_interval": 2.0,
+            "max_direction_change": 2.0,
+            "enabled": true
+        },
+        {
+            "name": "intercept",
+            "type": "seek",
+            "speed": 60.0,
+            "max_force": 200.0,
+            "enabled": true
+        },
+        {
+            "name": "pursuit",
+            "type": "seek",
+            "speed": 45.0,
+            "max_force": 150.0,
+            "enabled": true
+        }
+    ]
+}

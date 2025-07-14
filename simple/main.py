@@ -18,16 +18,20 @@ from renderer import SimpleRenderer
 def main():
     """Main entry point with simplified command line interface"""
     parser = argparse.ArgumentParser(
-        description='Solar Factions - Simplified Space Map Generator',
+        description='Solar Factions - Simplified Space Map Generator with Game Systems',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
   python main.py                          # Generate and show basic map
+  python main.py --game                  # Run interactive game mode
+  python main.py --simulate 10           # Run 10-second simulation
+  python main.py --demo interactive      # Run interactive demo
   python main.py --template frontier     # Use frontier template
   python main.py --save my_map          # Save generated map
   python main.py --load my_map          # Load and display saved map
   python main.py --list                 # List available maps
   python main.py --seed 42 --save test  # Reproducible generation
+  python main.py --test                 # Run system tests
         """
     )
     
@@ -49,6 +53,11 @@ Examples:
     
     # System options
     parser.add_argument('--test', action='store_true', help='Run system tests')
+    parser.add_argument('--game', action='store_true', help='Run interactive game mode')
+    parser.add_argument('--demo', choices=['interactive', 'headless', 'showcase', 'behavior'],
+                       help='Run game system demo')
+    parser.add_argument('--simulate', type=float, metavar='SECONDS',
+                       help='Run headless simulation for specified duration')
     
     args = parser.parse_args()
     
@@ -60,6 +69,18 @@ Examples:
         # Handle different commands
         if args.test:
             run_system_tests()
+            return
+        
+        if args.demo:
+            run_demo_mode(args.demo)
+            return
+        
+        if args.game:
+            run_interactive_game()
+            return
+        
+        if args.simulate:
+            run_simulation(args.simulate, args.template, args.seed)
             return
         
         if args.list:
@@ -87,6 +108,75 @@ Examples:
         return 1
     
     return 0
+
+
+def run_demo_mode(demo_type: str):
+    """Run demo mode"""
+    print(f"Running {demo_type} demo mode...")
+    
+    try:
+        import subprocess
+        import sys
+        result = subprocess.run([sys.executable, 'game_demo.py', demo_type], 
+                              capture_output=False, text=True)
+        return result.returncode
+    except Exception as e:
+        print(f"Error running demo: {e}")
+        return 1
+
+
+def run_interactive_game():
+    """Run interactive game mode"""
+    print("Starting interactive game mode...")
+    
+    try:
+        from game_manager import GameManager
+        
+        # Create game manager
+        game_manager = GameManager()
+        
+        # Generate a map
+        print("Generating game map...")
+        if not game_manager.generate_map("frontier", seed=42):
+            print("Failed to generate map")
+            return 1
+        
+        # Run interactive mode
+        game_manager.run_interactive()
+        return 0
+        
+    except ImportError as e:
+        print(f"Error: Missing dependency for game mode: {e}")
+        print("Install pygame with: pip install pygame")
+        return 1
+    except Exception as e:
+        print(f"Error running interactive game: {e}")
+        return 1
+
+
+def run_simulation(duration: float, template: str, seed: int):
+    """Run headless simulation"""
+    print(f"Running headless simulation for {duration} seconds...")
+    
+    try:
+        from game_manager import GameManager
+        
+        # Create game manager
+        game_manager = GameManager()
+        
+        # Generate a map
+        print(f"Generating map using template: {template}")
+        if not game_manager.generate_map(template, seed):
+            print("Failed to generate map")
+            return 1
+        
+        # Run simulation
+        game_manager.run_headless(duration)
+        return 0
+        
+    except Exception as e:
+        print(f"Error running simulation: {e}")
+        return 1
 
 
 def generate_map(generator: SimpleMapGenerator, template: str, seed: int) -> List[Entity]:

@@ -2,12 +2,128 @@
 """
 Simplified entity system using composition over inheritance.
 This replaces the complex hierarchy with a flexible component-based approach.
+Components are now configurable and extendable through JSON files.
 """
 
-from typing import Dict, Any, List, Tuple
+from typing import Dict, Any, List, Tuple, Optional
 import json
 import uuid
+import os
 from datetime import datetime
+
+
+class ComponentRegistry:
+    """Registry for managing component definitions from JSON files"""
+    
+    def __init__(self):
+        self.components = {}
+        self.component_paths = []
+        self._load_default_components()
+    
+    def _load_default_components(self):
+        """Load default component definitions"""
+        # Try to load from the data/components directory
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        components_dir = os.path.join(os.path.dirname(current_dir), 'data', 'components')
+        
+        # Load main components file
+        main_components_path = os.path.join(components_dir, 'components.json')
+        if os.path.exists(main_components_path):
+            self.load_components_from_file(main_components_path)
+        
+        # Load custom components file
+        custom_components_path = os.path.join(components_dir, 'custom_components.json')
+        if os.path.exists(custom_components_path):
+            self.load_components_from_file(custom_components_path)
+    
+    def load_components_from_file(self, filepath: str):
+        """Load component definitions from a JSON file"""
+        try:
+            with open(filepath, 'r') as f:
+                components = json.load(f)
+            
+            for component_name, component_def in components.items():
+                self.register_component(component_name, component_def)
+            
+            if filepath not in self.component_paths:
+                self.component_paths.append(filepath)
+        
+        except Exception as e:
+            print(f"Warning: Could not load components from {filepath}: {e}")
+    
+    def register_component(self, name: str, definition: Dict[str, Any]):
+        """Register a component definition"""
+        self.components[name] = definition
+    
+    def get_component_definition(self, name: str) -> Optional[Dict[str, Any]]:
+        """Get a component definition by name"""
+        return self.components.get(name)
+    
+    def create_component(self, name: str, **overrides) -> Dict[str, Any]:
+        """Create a component instance with default values and overrides"""
+        definition = self.get_component_definition(name)
+        if not definition:
+            # Return a basic component if definition not found
+            return overrides
+        
+        # Start with default values from the definition
+        component_data = {}
+        properties = definition.get('properties', {})
+        
+        for prop_name, prop_def in properties.items():
+            if isinstance(prop_def, dict) and 'default' in prop_def:
+                component_data[prop_name] = prop_def['default']
+            else:
+                component_data[prop_name] = prop_def
+        
+        # Apply overrides
+        component_data.update(overrides)
+        
+        return component_data
+    
+    def get_available_components(self) -> List[str]:
+        """Get list of all available component names"""
+        return list(self.components.keys())
+    
+    def get_component_description(self, name: str) -> str:
+        """Get description of a component"""
+        definition = self.get_component_definition(name)
+        if definition:
+            return definition.get('description', f'{name} component')
+        return f'Unknown component: {name}'
+    
+    def validate_component_data(self, name: str, data: Dict[str, Any]) -> bool:
+        """Validate component data against its definition"""
+        definition = self.get_component_definition(name)
+        if not definition:
+            return True  # Allow unknown components
+        
+        properties = definition.get('properties', {})
+        
+        for prop_name, prop_value in data.items():
+            if prop_name in properties:
+                prop_def = properties[prop_name]
+                if isinstance(prop_def, dict) and 'type' in prop_def:
+                    expected_type = prop_def['type']
+                    # Basic type validation
+                    if expected_type == 'integer' and not isinstance(prop_value, int):
+                        return False
+                    elif expected_type == 'float' and not isinstance(prop_value, (int, float)):
+                        return False
+                    elif expected_type == 'string' and not isinstance(prop_value, str):
+                        return False
+                    elif expected_type == 'boolean' and not isinstance(prop_value, bool):
+                        return False
+                    elif expected_type == 'array' and not isinstance(prop_value, list):
+                        return False
+                    elif expected_type == 'object' and not isinstance(prop_value, dict):
+                        return False
+        
+        return True
+
+
+# Global component registry instance
+component_registry = ComponentRegistry()
 
 
 class Entity:
@@ -30,10 +146,21 @@ class Entity:
         self.created_at = datetime.now()
         self.updated_at = datetime.now()
     
-    def add_component(self, name: str, component_data: Dict[str, Any]):
+    def add_component(self, name: str, component_data: Dict[str, Any] = None, **kwargs):
         """Add a component to this entity"""
-        self.components[name] = component_data
+        if component_data is None:
+            component_data = {}
+        
+        # Merge component_data with kwargs
+        component_data.update(kwargs)
+        
+        # Use the component registry to create the component with proper defaults
+        self.components[name] = component_registry.create_component(name, **component_data)
         self.updated_at = datetime.now()
+    
+    def add_component_from_template(self, name: str, **overrides):
+        """Add a component using the registry template with optional overrides"""
+        self.add_component(name, **overrides)
     
     def get_component(self, name: str) -> Dict[str, Any]:
         """Get a component from this entity"""
@@ -119,8 +246,13 @@ class EntityFactory:
         entity = Entity(entity_type, position, **properties)
         
         # Add template components
-        for component_name, component_data in template.get('components', {}).items():
-            entity.add_component(component_name, component_data)
+        for component_name, component_config in template.get('components', {}).items():
+            if isinstance(component_config, dict):
+                # If it's a dictionary, use it as override data
+                entity.add_component(component_name, **component_config)
+            else:
+                # If it's a string or other type, treat it as a component name
+                entity.add_component(component_name)
         
         return entity
     
@@ -133,48 +265,97 @@ class EntityFactory:
             self.register_template(entity_type, template)
 
 
-# Common component types for easy reuse
+# Component management functions
+def get_available_components() -> List[str]:
+    """Get list of all available component names"""
+    return component_registry.get_available_components()
+
+
+def get_component_info(name: str) -> Dict[str, Any]:
+    """Get detailed information about a component"""
+    definition = component_registry.get_component_definition(name)
+    if definition:
+        return {
+            'name': name,
+            'description': definition.get('description', 'No description'),
+            'properties': definition.get('properties', {}),
+            'available': True
+        }
+    return {
+        'name': name,
+        'description': 'Unknown component',
+        'properties': {},
+        'available': False
+    }
+
+
+def create_component(name: str, **overrides) -> Dict[str, Any]:
+    """Create a component instance with default values and overrides"""
+    return component_registry.create_component(name, **overrides)
+
+
+def load_custom_components(filepath: str):
+    """Load custom component definitions from a JSON file"""
+    component_registry.load_components_from_file(filepath)
+
+
+def register_component(name: str, definition: Dict[str, Any]):
+    """Register a new component definition"""
+    component_registry.register_component(name, definition)
+
+
+# Legacy ComponentTemplates class for backward compatibility
 class ComponentTemplates:
-    """Predefined component templates for common functionality"""
+    """Legacy component templates - now uses the registry system"""
     
-    MOVEMENT = {
-        'max_speed': 100.0,
-        'acceleration': 10.0,
-        'velocity': [0.0, 0.0],
-        'destination': None
-    }
+    @staticmethod
+    def get_movement(**overrides):
+        return create_component('movement', **overrides)
     
-    HEALTH = {
-        'max_health': 100,
-        'current_health': 100,
-        'shields': 0,
-        'armor': 0
-    }
+    @staticmethod
+    def get_health(**overrides):
+        return create_component('health', **overrides)
     
-    CARGO = {
-        'capacity': 100,
-        'current_load': 0,
-        'items': []
-    }
+    @staticmethod
+    def get_cargo(**overrides):
+        return create_component('cargo', **overrides)
     
-    COMBAT = {
-        'weapon_damage': 10,
-        'weapon_range': 50,
-        'weapon_cooldown': 1.0,
-        'last_fired': 0
-    }
+    @staticmethod
+    def get_combat(**overrides):
+        return create_component('combat', **overrides)
     
-    MINING = {
-        'mining_rate': 5.0,
-        'mining_range': 20.0,
-        'target_asteroid': None
-    }
+    @staticmethod
+    def get_mining(**overrides):
+        return create_component('mining', **overrides)
     
-    TRADING = {
-        'credits': 1000,
-        'buy_orders': [],
-        'sell_orders': []
-    }
+    @staticmethod
+    def get_trading(**overrides):
+        return create_component('trading', **overrides)
+    
+    # Legacy static properties for backward compatibility
+    @property
+    def MOVEMENT(self):
+        return create_component('movement')
+    
+    @property
+    def HEALTH(self):
+        return create_component('health')
+    
+    @property
+    def CARGO(self):
+        return create_component('cargo')
+    
+    @property
+    def COMBAT(self):
+        return create_component('combat')
+    
+    @property
+    def MINING(self):
+        return create_component('mining')
+    
+    @property
+    def TRADING(self):
+        return create_component('trading')
 
 
 # Example usage and predefined entity types
@@ -215,8 +396,8 @@ def create_basic_templates() -> Dict[str, Dict[str, Any]]:
                 'services': ['trading', 'repair']
             },
             'components': {
-                'trading': ComponentTemplates.TRADING,
-                'cargo': ComponentTemplates.CARGO
+                'trading': {},  # Use default trading component
+                'cargo': {}     # Use default cargo component
             }
         },
         'cargo_ship': {
@@ -226,9 +407,9 @@ def create_basic_templates() -> Dict[str, Dict[str, Any]]:
                 'crew': 5
             },
             'components': {
-                'movement': ComponentTemplates.MOVEMENT,
-                'health': ComponentTemplates.HEALTH,
-                'cargo': ComponentTemplates.CARGO
+                'movement': {},  # Use default movement component
+                'health': {},    # Use default health component
+                'cargo': {}      # Use default cargo component
             }
         },
         'fighter': {
@@ -238,9 +419,9 @@ def create_basic_templates() -> Dict[str, Dict[str, Any]]:
                 'crew': 1
             },
             'components': {
-                'movement': ComponentTemplates.MOVEMENT,
-                'health': ComponentTemplates.HEALTH,
-                'combat': ComponentTemplates.COMBAT
+                'movement': {},  # Use default movement component
+                'health': {},    # Use default health component
+                'combat': {}     # Use default combat component
             }
         },
         'mining_ship': {
@@ -250,10 +431,10 @@ def create_basic_templates() -> Dict[str, Dict[str, Any]]:
                 'crew': 3
             },
             'components': {
-                'movement': ComponentTemplates.MOVEMENT,
-                'health': ComponentTemplates.HEALTH,
-                'cargo': ComponentTemplates.CARGO,
-                'mining': ComponentTemplates.MINING
+                'movement': {},  # Use default movement component
+                'health': {},    # Use default health component
+                'cargo': {},     # Use default cargo component
+                'mining': {}     # Use default mining component
             }
         }
     }
@@ -281,11 +462,36 @@ if __name__ == "__main__":
     print(f"\nShip has movement: {ship.has_component('movement')}")
     print(f"Ship cargo capacity: {ship.get_component('cargo').get('capacity', 0)}")
     
-    # Add a new component
-    ship.add_component('scanner', {'range': 100, 'resolution': 'high'})
-    print(f"Ship has scanner: {ship.has_component('scanner')}")
+    # Add a new component using the registry
+    ship.add_component('communication', sensor_range=75.0, communication_range=150.0)
+    print(f"Ship has communication: {ship.has_component('communication')}")
+    print(f"Ship sensor range: {ship.get_component('communication').get('sensor_range', 0)}")
+    
+    # Add a custom component
+    ship.add_component('stealth', stealth_rating=25, cloaking_active=False)
+    print(f"Ship has stealth: {ship.has_component('stealth')}")
+    
+    # Show available components
+    print(f"\nAvailable components: {get_available_components()}")
+    
+    # Show component info
+    movement_info = get_component_info('movement')
+    print(f"\nMovement component info:")
+    print(f"  Description: {movement_info['description']}")
+    print(f"  Properties: {list(movement_info['properties'].keys())}")
     
     # Serialize and deserialize
     ship_data = ship.to_dict()
     reconstructed_ship = Entity.from_dict(ship_data)
-    print(f"Reconstructed: {reconstructed_ship}")
+    print(f"\nReconstructed: {reconstructed_ship}")
+    print(f"Reconstructed ship components: {list(reconstructed_ship.components.keys())}")
+    
+    # Demonstrate dynamic component creation
+    print(f"\nDynamic component creation:")
+    mining_component = create_component('mining', mining_rate=10.0, specialized_resources=['platinum'])
+    print(f"Mining component: {mining_component}")
+    
+    # Add it to an entity
+    ship.add_component('mining', **mining_component)
+    print(f"Ship now has mining: {ship.has_component('mining')}")
+    print(f"Ship mining rate: {ship.get_component('mining').get('mining_rate', 0)}")

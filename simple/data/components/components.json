@@ -1,0 +1,302 @@
+{
+  "movement": {
+    "description": "Basic movement component for entities that can move",
+    "properties": {
+      "max_speed": {
+        "type": "float",
+        "default": 100.0,
+        "description": "Maximum speed in units per second"
+      },
+      "acceleration": {
+        "type": "float", 
+        "default": 10.0,
+        "description": "Acceleration rate"
+      },
+      "velocity": {
+        "type": "array",
+        "default": [0.0, 0.0],
+        "description": "Current velocity vector [x, y]"
+      },
+      "destination": {
+        "type": "position",
+        "default": null,
+        "description": "Target destination coordinates"
+      },
+      "fuel": {
+        "type": "float",
+        "default": 100.0,
+        "description": "Current fuel level"
+      },
+      "fuel_consumption": {
+        "type": "float",
+        "default": 1.0,
+        "description": "Fuel consumption rate per unit distance"
+      }
+    }
+  },
+  "health": {
+    "description": "Health and damage system",
+    "properties": {
+      "max_health": {
+        "type": "integer",
+        "default": 100,
+        "description": "Maximum health points"
+      },
+      "current_health": {
+        "type": "integer",
+        "default": 100,
+        "description": "Current health points"
+      },
+      "shields": {
+        "type": "integer",
+        "default": 0,
+        "description": "Shield points"
+      },
+      "max_shields": {
+        "type": "integer",
+        "default": 50,
+        "description": "Maximum shield points"
+      },
+      "armor": {
+        "type": "integer",
+        "default": 0,
+        "description": "Armor rating"
+      },
+      "shield_recharge_rate": {
+        "type": "float",
+        "default": 5.0,
+        "description": "Shield recharge rate per second"
+      }
+    }
+  },
+  "cargo": {
+    "description": "Cargo storage and management",
+    "properties": {
+      "capacity": {
+        "type": "integer",
+        "default": 100,
+        "description": "Maximum cargo capacity"
+      },
+      "current_load": {
+        "type": "integer",
+        "default": 0,
+        "description": "Current cargo load"
+      },
+      "items": {
+        "type": "array",
+        "default": [],
+        "description": "List of cargo items"
+      },
+      "cargo_types": {
+        "type": "array",
+        "default": ["general"],
+        "description": "Types of cargo this entity can carry"
+      }
+    }
+  },
+  "combat": {
+    "description": "Combat and weapon systems",
+    "properties": {
+      "weapon_damage": {
+        "type": "integer",
+        "default": 10,
+        "description": "Weapon damage per shot"
+      },
+      "weapon_range": {
+        "type": "float",
+        "default": 50.0,
+        "description": "Weapon effective range"
+      },
+      "weapon_cooldown": {
+        "type": "float",
+        "default": 1.0,
+        "description": "Time between shots in seconds"
+      },
+      "last_fired": {
+        "type": "float",
+        "default": 0.0,
+        "description": "Timestamp of last shot"
+      },
+      "weapon_type": {
+        "type": "string",
+        "default": "laser",
+        "description": "Type of weapon system"
+      },
+      "ammunition": {
+        "type": "integer",
+        "default": 100,
+        "description": "Current ammunition count"
+      }
+    }
+  },
+  "mining": {
+    "description": "Mining and resource extraction",
+    "properties": {
+      "mining_rate": {
+        "type": "float",
+        "default": 5.0,
+        "description": "Mining rate in units per second"
+      },
+      "mining_range": {
+        "type": "float",
+        "default": 20.0,
+        "description": "Mining equipment range"
+      },
+      "target_asteroid": {
+        "type": "string",
+        "default": null,
+        "description": "ID of target asteroid"
+      },
+      "mining_efficiency": {
+        "type": "float",
+        "default": 1.0,
+        "description": "Mining efficiency multiplier"
+      },
+      "specialized_resources": {
+        "type": "array",
+        "default": [],
+        "description": "Resources this miner is specialized for"
+      }
+    }
+  },
+  "trading": {
+    "description": "Trading and economic systems",
+    "properties": {
+      "credits": {
+        "type": "integer",
+        "default": 1000,
+        "description": "Current credits/money"
+      },
+      "buy_orders": {
+        "type": "array",
+        "default": [],
+        "description": "List of buy orders"
+      },
+      "sell_orders": {
+        "type": "array",
+        "default": [],
+        "description": "List of sell orders"
+      },
+      "reputation": {
+        "type": "integer",
+        "default": 0,
+        "description": "Trading reputation score"
+      },
+      "trade_routes": {
+        "type": "array",
+        "default": [],
+        "description": "Known profitable trade routes"
+      }
+    }
+  },
+  "research": {
+    "description": "Research and development capabilities",
+    "properties": {
+      "research_points": {
+        "type": "integer",
+        "default": 0,
+        "description": "Accumulated research points"
+      },
+      "research_rate": {
+        "type": "float",
+        "default": 1.0,
+        "description": "Research points generated per second"
+      },
+      "current_project": {
+        "type": "string",
+        "default": null,
+        "description": "Currently active research project"
+      },
+      "completed_projects": {
+        "type": "array",
+        "default": [],
+        "description": "List of completed research projects"
+      },
+      "research_focus": {
+        "type": "string",
+        "default": "general",
+        "description": "Primary research focus area"
+      }
+    }
+  },
+  "production": {
+    "description": "Manufacturing and production capabilities",
+    "properties": {
+      "production_rate": {
+        "type": "float",
+        "default": 1.0,
+        "description": "Production rate in units per second"
+      },
+      "production_queue": {
+        "type": "array",
+        "default": [],
+        "description": "Queue of items being produced"
+      },
+      "blueprints": {
+        "type": "array",
+        "default": [],
+        "description": "Available production blueprints"
+      },
+      "efficiency": {
+        "type": "float",
+        "default": 1.0,
+        "description": "Production efficiency multiplier"
+      }
+    }
+  },
+  "communication": {
+    "description": "Communication and sensor systems",
+    "properties": {
+      "communication_range": {
+        "type": "float",
+        "default": 100.0,
+        "description": "Communication range in units"
+      },
+      "sensor_range": {
+        "type": "float",
+        "default": 50.0,
+        "description": "Sensor detection range"
+      },
+      "sensor_resolution": {
+        "type": "string",
+        "default": "medium",
+        "description": "Sensor resolution quality"
+      },
+      "encrypted_channels": {
+        "type": "array",
+        "default": [],
+        "description": "List of encrypted communication channels"
+      }
+    }
+  },
+  "ai": {
+    "description": "AI behavior and decision making",
+    "properties": {
+      "ai_type": {
+        "type": "string",
+        "default": "basic",
+        "description": "Type of AI system"
+      },
+      "current_goal": {
+        "type": "string",
+        "default": null,
+        "description": "Current AI objective"
+      },
+      "memory": {
+        "type": "object",
+        "default": {},
+        "description": "AI memory storage"
+      },
+      "aggression_level": {
+        "type": "float",
+        "default": 0.5,
+        "description": "AI aggression level (0-1)"
+      },
+      "intelligence_level": {
+        "type": "integer",
+        "default": 50,
+        "description": "AI intelligence rating"
+      }
+    }
+  }
+}

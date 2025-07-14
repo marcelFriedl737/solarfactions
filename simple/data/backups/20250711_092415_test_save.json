@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "created_at": "2025-07-11T09:28:10.589349",
+    "created_at": "2025-07-11T09:09:29.693450",
     "entity_count": 3,
     "filename": "test_save"
   },
   "entities": [
     {
-      "id": "3081f7b9-34dc-44f3-bf05-bfb6b4a22c29",
+      "id": "0df46b43-5d3b-481f-a8d0-a596c1f761e3",
       "type": "star",
       "position": [
         500,
@@ -19,11 +19,11 @@
         "color": "yellow"
       },
       "components": {},
-      "created_at": "2025-07-11T09:28:10.588851",
-      "updated_at": "2025-07-11T09:28:10.588852"
+      "created_at": "2025-07-11T09:09:29.692880",
+      "updated_at": "2025-07-11T09:09:29.692880"
     },
     {
-      "id": "0a2285c1-445f-4b6c-8f9a-3962a4c009e0",
+      "id": "79519e8b-3a43-4c66-852c-e03ade789a45",
       "type": "planet",
       "position": [
         300,
@@ -36,11 +36,11 @@
         "population": 0
       },
       "components": {},
-      "created_at": "2025-07-11T09:28:10.588859",
-      "updated_at": "2025-07-11T09:28:10.588860"
+      "created_at": "2025-07-11T09:09:29.692886",
+      "updated_at": "2025-07-11T09:09:29.692887"
     },
     {
-      "id": "3201e958-f40a-44e9-bb9c-0b218b0b641c",
+      "id": "f8cd4ef4-5b1d-4b06-92ff-08fcdef8990e",
       "type": "cargo_ship",
       "position": [
         100,
@@ -59,29 +59,22 @@
             0.0,
             0.0
           ],
-          "destination": null,
-          "fuel": 100.0,
-          "fuel_consumption": 1.0
+          "destination": null
         },
         "health": {
           "max_health": 100,
           "current_health": 100,
           "shields": 0,
-          "max_shields": 50,
-          "armor": 0,
-          "shield_recharge_rate": 5.0
+          "armor": 0
         },
         "cargo": {
           "capacity": 100,
           "current_load": 0,
-          "items": [],
-          "cargo_types": [
-            "general"
-          ]
+          "items": []
         }
       },
-      "created_at": "2025-07-11T09:28:10.588865",
-      "updated_at": "2025-07-11T09:28:10.588873"
+      "created_at": "2025-07-11T09:09:29.692892",
+      "updated_at": "2025-07-11T09:09:29.692894"
     }
   ]
 }

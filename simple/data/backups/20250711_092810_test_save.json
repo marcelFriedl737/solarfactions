@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "created_at": "2025-07-11T09:28:10.589349",
+    "created_at": "2025-07-11T09:24:15.217405",
     "entity_count": 3,
     "filename": "test_save"
   },
   "entities": [
     {
-      "id": "3081f7b9-34dc-44f3-bf05-bfb6b4a22c29",
+      "id": "7f3d654d-8c07-44dd-ae30-3d79021214b7",
       "type": "star",
       "position": [
         500,
@@ -19,11 +19,11 @@
         "color": "yellow"
       },
       "components": {},
-      "created_at": "2025-07-11T09:28:10.588851",
-      "updated_at": "2025-07-11T09:28:10.588852"
+      "created_at": "2025-07-11T09:24:15.212690",
+      "updated_at": "2025-07-11T09:24:15.212691"
     },
     {
-      "id": "0a2285c1-445f-4b6c-8f9a-3962a4c009e0",
+      "id": "c9000268-ba6c-4e44-ae22-640782b1f089",
       "type": "planet",
       "position": [
         300,
@@ -36,11 +36,11 @@
         "population": 0
       },
       "components": {},
-      "created_at": "2025-07-11T09:28:10.588859",
-      "updated_at": "2025-07-11T09:28:10.588860"
+      "created_at": "2025-07-11T09:24:15.212697",
+      "updated_at": "2025-07-11T09:24:15.212697"
     },
     {
-      "id": "3201e958-f40a-44e9-bb9c-0b218b0b641c",
+      "id": "3b65fbb9-a4a6-4270-8cf8-e5eac54bf77f",
       "type": "cargo_ship",
       "position": [
         100,
@@ -80,8 +80,8 @@
           ]
         }
       },
-      "created_at": "2025-07-11T09:28:10.588865",
-      "updated_at": "2025-07-11T09:28:10.588873"
+      "created_at": "2025-07-11T09:24:15.212702",
+      "updated_at": "2025-07-11T09:24:15.212709"
     }
   ]
 }

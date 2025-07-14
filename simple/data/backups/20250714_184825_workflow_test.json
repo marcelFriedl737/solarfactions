@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "created_at": "2025-07-14T18:48:25.299473",
+    "created_at": "2025-07-11T09:28:10.593455",
     "entity_count": 28,
     "filename": "workflow_test"
   },
   "entities": [
     {
-      "id": "9edd2a9b-d33d-4f90-978c-b76fe7a6ae22",
+      "id": "e0e7c57e-96e6-4dc8-809c-0e3c78c2141b",
       "type": "star",
       "position": [
         455.23635988509443,
@@ -20,11 +20,11 @@
         "luminosity": 0.8430800939753756
       },
       "components": {},
-      "created_at": "2025-07-14T18:48:25.298964",
-      "updated_at": "2025-07-14T18:48:25.298965"
+      "created_at": "2025-07-11T09:28:10.592812",
+      "updated_at": "2025-07-11T09:28:10.592813"
     },
     {
-      "id": "f8a36323-d32b-4173-8949-19a6c12cd88d",
+      "id": "bcd3e875-7d37-47f7-b31c-0eef41f63402",
       "type": "planet",
       "position": [
         427.47459949345307,
@@ -38,11 +38,11 @@
         "atmosphere": "none"
       },
       "components": {},
-      "created_at": "2025-07-14T18:48:25.298985",
-      "updated_at": "2025-07-14T18:48:25.298986"
+      "created_at": "2025-07-11T09:28:10.592824",
+      "updated_at": "2025-07-11T09:28:10.592825"
     },
     {
-      "id": "59f0948c-e284-4684-86eb-af0e18913244",
+      "id": "7b53add2-c60e-4712-9fef-5ec3b5f80ab4",
       "type": "planet",
       "position": [
         404.47893672624207,
@@ -56,11 +56,11 @@
         "atmosphere": "thick"
       },
       "components": {},
-      "created_at": "2025-07-14T18:48:25.298996",
-      "updated_at": "2025-07-14T18:48:25.298997"
+      "created_at": "2025-07-11T09:28:10.592832",
+      "updated_at": "2025-07-11T09:28:10.592832"
     },
     {
-      "id": "34a8ea03-1943-4d61-82e5-8d584e3738cc",
+      "id": "e9e5cd0c-0a55-49ee-97f3-665bdf915587",
       "type": "planet",
       "position": [
         281.0344755823164,
@@ -74,11 +74,11 @@
         "atmosphere": "thin"
       },
       "components": {},
-      "created_at": "2025-07-14T18:48:25.299006",
-      "updated_at": "2025-07-14T18:48:25.299006"
+      "created_at": "2025-07-11T09:28:10.592839",
+      "updated_at": "2025-07-11T09:28:10.592839"
     },
     {
-      "id": "30fdba5f-9b81-466c-8421-d174510c04c7",
+      "id": "7343b1cc-08dd-48e3-aac4-36650ea3dd9c",
       "type": "asteroid",
       "position": [
         181.62937703966293,
@@ -94,11 +94,11 @@
         "composition": "metallic"
       },
       "components": {},
-      "created_at": "2025-07-14T18:48:25.299024",
-      "updated_at": "2025-07-14T18:48:25.299025"
+      "created_at": "2025-07-11T09:28:10.592852",
+      "updated_at": "2025-07-11T09:28:10.592852"
     },
     {
-      "id": "2db118bf-6cfe-4142-a02d-b5072d5455ec",
+      "id": "085b81a2-b09c-464a-89e7-fea02f1bbea2",
       "type": "asteroid",
       "position": [
         633.7105342279378,
@@ -114,11 +114,11 @@
         "composition": "rocky"
       },
       "components": {},
-      "created_at": "2025-07-14T18:48:25.299033",
-      "updated_at": "2025-07-14T18:48:25.299033"
+      "created_at": "2025-07-11T09:28:10.592858",
+      "updated_at": "2025-07-11T09:28:10.592858"
     },
     {
-      "id": "8bd302cb-9253-41ff-861f-1c557d9562b7",
+      "id": "8ba47b4f-e372-4d95-9cbf-cb6a734ed71a",
       "type": "asteroid",
       "position": [
         825.2863825633286,
@@ -134,11 +134,11 @@
         "composition": "metallic"
       },
       "components": {},
-      "created_at": "2025-07-14T18:48:25.299041",
-      "updated_at": "2025-07-14T18:48:25.299041"
+      "created_at": "2025-07-11T09:28:10.592864",
+      "updated_at": "2025-07-11T09:28:10.592864"
     },
     {
-      "id": "d9451044-548b-4e73-81ad-5b2be5632d7e",
+      "id": "52e1c106-e944-4bf9-9c56-935c42615135",
       "type": "asteroid",
       "position": [
         444.5100699270253,
@@ -154,11 +154,11 @@
         "composition": "rocky"
       },
       "components": {},
-      "created_at": "2025-07-14T18:48:25.299049",
-      "updated_at": "2025-07-14T18:48:25.299049"
+      "created_at": "2025-07-11T09:28:10.592870",
+      "updated_at": "2025-07-11T09:28:10.592870"
     },
     {
-      "id": "911239d7-5056-44de-929a-e94af067231d",
+      "id": "837782a8-7bad-4405-8d77-160d785a3f4e",
       "type": "asteroid",
       "position": [
         475.4341413845875,
@@ -174,11 +174,11 @@
         "composition": "metallic"
       },
       "components": {},
-      "created_at": "2025-07-14T18:48:25.299056",
-      "updated_at": "2025-07-14T18:48:25.299057"
+      "created_at": "2025-07-11T09:28:10.592876",
+      "updated_at": "2025-07-11T09:28:10.592876"
     },
     {
-      "id": "05fcfc29-6ddd-4154-931f-5d4ba0d30fb7",
+      "id": "440bb03e-03c3-4cbc-8a08-f8111fbf949b",
       "type": "asteroid",
       "position": [
         344.0777024237046,
@@ -194,11 +194,11 @@
         "composition": "rocky"
       },
       "components": {},
-      "created_at": "2025-07-14T18:48:25.299064",
-      "updated_at": "2025-07-14T18:48:25.299065"
+      "created_at": "2025-07-11T09:28:10.592882",
+      "updated_at": "2025-07-11T09:28:10.592883"
     },
     {
-      "id": "39bdd276-0a63-42f4-9fff-7cd8db35fcf1",
+      "id": "17dc68eb-d78b-4c91-b5dd-0f427deb2aa8",
       "type": "asteroid",
       "position": [
         486.36900905884784,
@@ -214,11 +214,11 @@
         "composition": "ice"
       },
       "components": {},
-      "created_at": "2025-07-14T18:48:25.299072",
-      "updated_at": "2025-07-14T18:48:25.299072"
+      "created_at": "2025-07-11T09:28:10.592888",
+      "updated_at": "2025-07-11T09:28:10.592888"
     },
     {
-      "id": "ad1d18e1-76f3-47e6-983e-154d29473401",
+      "id": "409a4f3a-e5c3-4a09-8660-3ec970d94438",
       "type": "asteroid",
       "position": [
         611.0052497808632,
@@ -234,11 +234,11 @@
         "composition": "ice"
       },
       "components": {},
-      "created_at": "2025-07-14T18:48:25.299079",
-      "updated_at": "2025-07-14T18:48:25.299080"
+      "created_at": "2025-07-11T09:28:10.592894",
+      "updated_at": "2025-07-11T09:28:10.592894"
     },
     {
-      "id": "7dc14264-3541-439a-bb7a-df763fd64d6b",
+      "id": "53ffa005-1f5f-4c1a-a722-abf701725d9b",
       "type": "asteroid",
       "position": [
         868.4507984832713,
@@ -254,11 +254,11 @@
         "composition": "rocky"
       },
       "components": {},
-      "created_at": "2025-07-14T18:48:25.299087",
-      "updated_at": "2025-07-14T18:48:25.299087"
+      "created_at": "2025-07-11T09:28:10.592900",
+      "updated_at": "2025-07-11T09:28:10.592900"
     },
     {
-      "id": "759ff1a9-9de3-4f30-80b0-40f1aacf1949",
+      "id": "c8604afb-77df-4371-ab4f-f6ba0ba2a26f",
       "type": "asteroid",
       "position": [
         814.3530474262183,
@@ -274,11 +274,11 @@
         "composition": "rocky"
       },
       "components": {},
-      "created_at": "2025-07-14T18:48:25.299094",
-      "updated_at": "2025-07-14T18:48:25.299095"
+      "created_at": "2025-07-11T09:28:10.592906",
+      "updated_at": "2025-07-11T09:28:10.592906"
     },
     {
-      "id": "f4936319-c6cd-480a-80e5-cbf5f1ad74aa",
+      "id": "e05fe47d-dc41-48e6-9c45-f7ef03dc8001",
       "type": "asteroid",
       "position": [
         447.50934055350547,
@@ -294,11 +294,11 @@
         "composition": "ice"
       },
       "components": {},
-      "created_at": "2025-07-14T18:48:25.299102",
-      "updated_at": "2025-07-14T18:48:25.299102"
+      "created_at": "2025-07-11T09:28:10.592912",
+      "updated_at": "2025-07-11T09:28:10.592912"
     },
     {
-      "id": "824f83eb-23a1-4c86-9e05-83948bd9da2e",
+      "id": "dc791bea-2581-4a35-be53-4626eed014d8",
       "type": "asteroid",
       "position": [
         737.1740440527059,
@@ -314,11 +314,11 @@
         "composition": "ice"
       },
       "components": {},
-      "created_at": "2025-07-14T18:48:25.299109",
-      "updated_at": "2025-07-14T18:48:25.299109"
+      "created_at": "2025-07-11T09:28:10.592918",
+      "updated_at": "2025-07-11T09:28:10.592918"
     },
     {
-      "id": "f7b3b29e-229e-4c8f-a19d-d6cb69abb35a",
+      "id": "a5635f6f-7120-4696-99d7-9c8abe6a5e4f",
       "type": "asteroid",
       "position": [
         766.8086200126199,
@@ -334,11 +334,11 @@
         "composition": "metallic"
       },
       "components": {},
-      "created_at": "2025-07-14T18:48:25.299116",
-      "updated_at": "2025-07-14T18:48:25.299117"
+      "created_at": "2025-07-11T09:28:10.592923",
+      "updated_at": "2025-07-11T09:28:10.592924"
     },
     {
-      "id": "c91ebfd5-50d9-4bc3-a786-9902dc9eaee8",
+      "id": "aa12bebf-dbb3-4a28-aae6-56e7857294c4",
       "type": "asteroid",
       "position": [
         435.5969987781145,
@@ -354,11 +354,11 @@
         "composition": "ice"
       },
       "components": {},
-      "created_at": "2025-07-14T18:48:25.299124",
-      "updated_at": "2025-07-14T18:48:25.299124"
+      "created_at": "2025-07-11T09:28:10.592929",
+      "updated_at": "2025-07-11T09:28:10.592930"
     },
     {
-      "id": "5e8fcbc2-b974-4d39-99f5-433bd9008496",
+      "id": "1da49af7-41b1-481a-85ca-3d2995c26129",
       "type": "asteroid",
       "position": [
         777.8734252105544,
@@ -374,11 +374,11 @@
         "composition": "rocky"
       },
       "components": {},
-      "created_at": "2025-07-14T18:48:25.299131",
-      "updated_at": "2025-07-14T18:48:25.299132"
+      "created_at": "2025-07-11T09:28:10.592935",
+      "updated_at": "2025-07-11T09:28:10.592936"
     },
     {
-      "id": "e6fbf48e-0b97-475c-a191-00dcfd65e979",
+      "id": "a8e93b3a-da85-49e9-b1af-4e460578f5da",
       "type": "space_station",
       "position": [
         696.7831091176868,
@@ -412,11 +412,11 @@
           ]
         }
       },
-      "created_at": "2025-07-14T18:48:25.299146",
-      "updated_at": "2025-07-14T18:48:25.299152"
+      "created_at": "2025-07-11T09:28:10.592944",
+      "updated_at": "2025-07-11T09:28:10.592949"
     },
     {
-      "id": "da4725ef-51b1-4153-92a2-df229a72b4b0",
+      "id": "8270b4e9-1a3c-4d7e-a2e1-7b34cea9bde7",
       "type": "cargo_ship",
       "position": [
         473.8041931085749,
@@ -457,11 +457,11 @@
           ]
         }
       },
-      "created_at": "2025-07-14T18:48:25.299166",
-      "updated_at": "2025-07-14T18:48:25.299173"
+      "created_at": "2025-07-11T09:28:10.592958",
+      "updated_at": "2025-07-11T09:28:10.592964"
     },
     {
-      "id": "9208b935-df3c-448c-a85f-9fd1b24c879b",
+      "id": "4653a2f7-be1a-48b9-953c-f134bd715d43",
       "type": "cargo_ship",
       "position": [
         679.3333277942875,
@@ -502,11 +502,11 @@
           ]
         }
       },
-      "created_at": "2025-07-14T18:48:25.299181",
-      "updated_at": "2025-07-14T18:48:25.299187"
+      "created_at": "2025-07-11T09:28:10.592970",
+      "updated_at": "2025-07-11T09:28:10.592976"
     },
     {
-      "id": "3dd8ce50-1e76-46d5-b241-5dabadddfd82",
+      "id": "a9330d89-881b-4df9-af25-9be19eadd787",
       "type": "cargo_ship",
       "position": [
         772.8032697779025,
@@ -547,11 +547,11 @@
           ]
         }
       },
-      "created_at": "2025-07-14T18:48:25.299195",
-      "updated_at": "2025-07-14T18:48:25.299201"
+      "created_at": "2025-07-11T09:28:10.592982",
+      "updated_at": "2025-07-11T09:28:10.592987"
     },
     {
-      "id": "49183df6-e06f-4d28-b081-a8c3aaba7cad",
+      "id": "1a28f46d-aca7-4b01-bd87-473dfe6363cb",
       "type": "cargo_ship",
       "position": [
         200.21320033947,
@@ -592,11 +592,11 @@
           ]
         }
       },
-      "created_at": "2025-07-14T18:48:25.299208",
-      "updated_at": "2025-07-14T18:48:25.299214"
+      "created_at": "2025-07-11T09:28:10.592993",
+      "updated_at": "2025-07-11T09:28:10.592999"
     },
     {
-      "id": "883cebaa-3b45-4ca9-9f07-43d4237ce8c2",
+      "id": "72c80253-c3ce-4e4f-8dde-597fc9d79822",
       "type": "fighter",
       "position": [
         742.6740874441637,
@@ -638,11 +638,11 @@
           "ammunition": 100
         }
       },
-      "created_at": "2025-07-14T18:48:25.299225",
-      "updated_at": "2025-07-14T18:48:25.299232"
+      "created_at": "2025-07-11T09:28:10.593007",
+      "updated_at": "2025-07-11T09:28:10.593013"
     },
     {
-      "id": "f30b1efc-089f-4069-b257-34551f96e710",
+      "id": "e816f083-3a8f-4ce2-a2bb-f2df170d2276",
       "type": "fighter",
       "position": [
         486.2553702035217,
@@ -684,11 +684,11 @@
           "ammunition": 100
         }
       },
-      "created_at": "2025-07-14T18:48:25.299240",
-      "updated_at": "2025-07-14T18:48:25.299247"
+      "created_at": "2025-07-11T09:28:10.593019",
+      "updated_at": "2025-07-11T09:28:10.593025"
     },
     {
-      "id": "46ffff4d-2789-4a16-8f21-dc3e65e0d20a",
+      "id": "02ee69d3-f1d2-4b6f-8721-f82e2a4c3c39",
       "type": "mining_ship",
       "position": [
         768.716096686023,
@@ -737,11 +737,11 @@
           "specialized_resources": []
         }
       },
-      "created_at": "2025-07-14T18:48:25.299259",
-      "updated_at": "2025-07-14T18:48:25.299288"
+      "created_at": "2025-07-11T09:28:10.593033",
+      "updated_at": "2025-07-11T09:28:10.593040"
     },
     {
-      "id": "2f31a423-e5f4-4e46-a26d-9f43d03bbb26",
+      "id": "e379d633-1ead-4284-a0b9-aa53db63909e",
       "type": "mining_ship",
       "position": [
         652.4025351465125,
@@ -790,8 +790,8 @@
           "specialized_resources": []
         }
       },
-      "created_at": "2025-07-14T18:48:25.299299",
-      "updated_at": "2025-07-14T18:48:25.299307"
+      "created_at": "2025-07-11T09:28:10.593046",
+      "updated_at": "2025-07-11T09:28:10.593053"
     }
   ]
 }
